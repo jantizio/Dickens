@@ -1,7 +1,9 @@
 import React from "react";
 import "./css/footer.css";
+import PROXY from "../../proxy";
+
 const
-  path="/footer/img?img=",
+  path=PROXY+"/footer/img?img=",
 	logoBF=path+"Logo-BF",
   logoRighi=path+"logo_righi",
   logoNero=path+"marchio_RER_NERO_2009_page-0001",

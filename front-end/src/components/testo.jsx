@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import axios from "axios";
 import ReactHtmlParser from "react-html-parser";
+import PROXY from "../proxy.js";
 
 class Testo extends Component
 {
@@ -19,7 +20,7 @@ class Testo extends Component
     }
     fetchData=()=>
     {
-        if(this.state.id&&this.state.lingua) axios.get("/"+this.state.pagina+"/"+this.state.tipo+"/"+this.state.id+"?lingua="+this.state.lingua).then(res=>this.setState({info:res.data,isLoad:true})).catch(err=>err);
+        if(this.state.id&&this.state.lingua) axios.get(PROXY+"/"+this.state.pagina+"/"+this.state.tipo+"/"+this.state.id+"?lingua="+this.state.lingua).then(res=>this.setState({info:res.data,isLoad:true})).catch(err=>err);
     }
     componentDidMount=()=>this.fetchData();
     componentDidUpdate=(prevProps, prevState)=>
