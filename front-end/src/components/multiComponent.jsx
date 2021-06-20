@@ -9,6 +9,8 @@ import "./css/tour.css";
 import "./css/layer1.css";
 import "./css/mappa.css";
 import "./css/ringraziamenti.css";
+import PROXY from "../proxy.js";
+
 
 
 class Multi extends Component
@@ -29,13 +31,13 @@ class Multi extends Component
   }
   componentDidMount=()=>
   {
-    axios.get("/"+this.state.pagina+"/txt")
+    axios.get(PROXY+"/"+this.state.pagina+"/txt")
     .then(res=>this.setState({qtaTxt:res.data.count}))
     .catch(err=>err);
-    axios.get("/"+this.state.pagina+"/img")
+    axios.get(PROXY+"/"+this.state.pagina+"/img")
     .then(res=>this.setState({qtaImg:res.data.count}))
     .catch(err=>err);
-    axios.get("/"+this.state.pagina+"/tre")
+    axios.get(PROXY+"/"+this.state.pagina+"/tre")
     .then(res=>this.setState({qtaTre:res.data.count}))
     .catch(err=>err);
     this.setState({isLoad:true});
@@ -58,7 +60,7 @@ class Multi extends Component
 
 
       temp = (<center>
-      <img src="/emiliaRomagna/img/1" alt="Mappa emilia romagna" usemap="#workmap"/>
+      <img src={PROXY+"/emiliaRomagna/img/1"} alt="Mappa emilia romagna" usemap="#workmap"/>
       <map name="workmap">
 	      <area target="" alt="uva" href="/campagna" coords="210,218,26" shape="circle"/>
         <area shape="poly" coords="659,163,656,175,656,187,663,192,669,184,677,178,682,171,689,169,700,170,710,170,718,171,727,171,735,172,743,174,755,177,762,177,769,180,781,184,801,197,810,189,822,189,836,190,836,197,827,206,838,210,840,219,840,227,835,232,848,235,845,241,851,243,846,248,858,251,866,252,861,260,860,267,857,274,851,278,848,284,840,289,834,293,824,289,825,296,821,302,813,314,803,315,798,321,796,329,802,330,793,335,792,348,790,365,783,370,772,367,765,360,758,353,748,353,744,359,736,361,725,366,722,372,714,379,712,388,710,397,700,400,689,401,679,397,668,402,657,406,651,407,637,409,625,404,625,395,620,402,615,408,612,414,606,425,598,419,586,413,573,412,569,404,569,394,566,388,564,379,564,373,570,361,575,356,575,350,581,351,585,356,591,357,601,350,605,339,603,333,597,329,604,324,611,324,617,322,620,315,617,308,614,301,616,295,619,287,612,285,599,284,605,279,611,276,611,268,614,260,609,252,622,253,624,247,625,241,632,236,629,228,622,227,615,218,605,216,606,210,609,205,611,198,611,191,611,184,615,176,627,173,632,172,638,165,647,163" alt="Bologna" href="/bologna"/>
@@ -88,7 +90,7 @@ class Multi extends Component
       temp = (<div class="wrapperP">
        <div class="evidenza">
          <div>
-           <img class="angoloimg" src="/emiliaRomagna/img/2" alt="Certosa"/>
+           <img class="angoloimg" src={PROXY+"/emiliaRomagna/img/2"} alt="Certosa"/>
          </div>
          <div class="imgname">Certosa | Bologna</div>
          <div class="imgdescription">
@@ -98,7 +100,7 @@ class Multi extends Component
 
        <div class="evidenza">
          <div>
-           <img class="angoloimg" src="/emiliaRomagna/img/3" alt="Teatro Farnese"/>
+           <img class="angoloimg" src={PROXY+"/emiliaRomagna/img/3"} alt="Teatro Farnese"/>
          </div>
          <div class="imgname">Teatro Farnese | Parma</div>
          <div class="imgdescription">
@@ -108,7 +110,7 @@ class Multi extends Component
 
        <div class="evidenza">
          <div>
-           <img class="angoloimg" src="/emiliaRomagna/img/4" alt="Cattedrale"/>
+           <img class="angoloimg" src={PROXY+"/emiliaRomagna/img/4"} alt="Cattedrale"/>
          </div>
          <div class="imgname">Cattedrale S.G. | Ferrara</div>
          <div class="imgdescription">
@@ -118,7 +120,7 @@ class Multi extends Component
 
        <div class="evidenza">
          <div>
-           <img class="angoloimg" src="/emiliaRomagna/img/5" alt="Duomo"/>
+           <img class="angoloimg" src={PROXY+"/emiliaRomagna/img/5"} alt="Duomo"/>
          </div>
          <div class="imgname">Duomo Modena | Modena</div>
          <div class="imgdescription">
@@ -134,12 +136,12 @@ class Multi extends Component
 
       struttura.push((<h2 class="subtitle" id="h2">BOLOGNA</h2>))
       temp = (<div class="livello animate__animated animate__bounceInDown">
-      <img src="/bologna/img/1" class="bg"/>
-      <Link to="/meridiana"><img class="icona" id="meridiana" src="/bologna/img/2"/></Link>
-      <Link to="/certosa"><img class="icona" id="certosa" src="/bologna/img/3"/></Link>
-      <Link to="/torri"><img class="icona" id="dueTorri" src="/bologna/img/4"/></Link>
-      <Link to="/pinacoteca"><img class="icona" id="pinacoteca" src="/bologna/img/5"/></Link>
-      <Link to="/pellegrino"><img class="icona" id="pellegrino" src="/bologna/img/6"/></Link>
+      <img src={PROXY+"/bologna/img/1"} class="bg"/>
+      <Link to="/meridiana"><img class="icona" id="meridiana" src={PROXY+"/bologna/img/2"}/></Link>
+      <Link to="/certosa"><img class="icona" id="certosa" src={PROXY+"/bologna/img/3"}/></Link>
+      <Link to="/torri"><img class="icona" id="dueTorri" src={PROXY+"/bologna/img/4"}/></Link>
+      <Link to="/pinacoteca"><img class="icona" id="pinacoteca" src={PROXY+"/bologna/img/5"}/></Link>
+      <Link to="/pellegrino"><img class="icona" id="pellegrino" src={PROXY+"/bologna/img/6"}/></Link>
       </div>)
       struttura.push(temp);
       break;
@@ -1619,8 +1621,8 @@ class Multi extends Component
       {
         let txts=[],divs=[],divsTre=[];
         for(let i=1;i<=this.state.qtaTxt;i++) txts.push(<Testo key={"txt"+i} id={i} lingua={this.state.lingua} pagina={this.state.pagina} tipo={"txt"} ref={ref=>this.child.push(ref)} />);
-        for(let i=1;i<=this.state.qtaImg;i++) divs.push(<div className="img"><img src={"/"+this.state.pagina+"/img/"+i} alt="not found" key={"img"+i} id={"img"+i} /><Testo key={"did"+i} id={i} lingua={this.state.lingua} pagina={this.state.pagina} tipo={"didascalia"} ref={ref=>this.child.push(ref)} /></div>);
-        for(let i=1;i<=this.state.qtaTre;i++) divsTre.push(<div className="img"><Pannellum width="90%" height="70vh" image={"/"+this.state.pagina+"/tre/"+i} pitch={10} yaw={180} hfov={110} autoLoad /><Testo key={"didTre"+i} id={i} lingua={this.state.lingua} pagina={this.state.pagina} tipo={"didascaliaTre"} ref={ref=>this.child.push(ref)} /></div>);
+        for(let i=1;i<=this.state.qtaImg;i++) divs.push(<div className="img"><img src={PROXY+"/"+this.state.pagina+"/img/"+i} alt="not found" key={"img"+i} id={"img"+i} /><Testo key={"did"+i} id={i} lingua={this.state.lingua} pagina={this.state.pagina} tipo={"didascalia"} ref={ref=>this.child.push(ref)} /></div>);
+        for(let i=1;i<=this.state.qtaTre;i++) divsTre.push(<div className="img"><Pannellum width="90%" height="70vh" image={PROXY+"/"+this.state.pagina+"/tre/"+i} pitch={10} yaw={180} hfov={110} autoLoad /><Testo key={"didTre"+i} id={i} lingua={this.state.lingua} pagina={this.state.pagina} tipo={"didascaliaTre"} ref={ref=>this.child.push(ref)} /></div>);
         return this.layout(txts,divs,divsTre);
       }
       else return <p>Loading...</p>;

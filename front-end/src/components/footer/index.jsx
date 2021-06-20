@@ -1,7 +1,10 @@
 import React from "react";
 import "./css/footer.css";
+import {Link} from "react-router-dom";
+import PROXY from "../../proxy";
+
 const
-  path="/footer/img?img=",
+  path=PROXY+"/footer/img?img=",
 	logoBF=path+"Logo-BF",
   logoRighi=path+"logo_righi",
   logoNero=path+"marchio_RER_NERO_2009_page-0001",
@@ -20,50 +23,30 @@ export default function Footer()
       <div className="container">
         <div className="righe">
           <div className="colonne pt">
-            <h3><a href="/bologna" className="name">Bologna</a></h3>
+            <h3><Link to="/bologna" className="name">Bologna</Link></h3>
             <ul className="list-unstyled foot-menu-collapsed collapse m-0">
               <li>
-                <a href="/pellegrino">Albergo del Pellegrino</a>
+                <Link to="/pellegrino">Albergo del Pellegrino</Link>
               </li>
               <li>
-                <a href="/certosa">Certosa</a>
+                <Link to="/certosa">Certosa</Link>
               </li>
               <li>
-                <a href="/pinacoteca">Pinacoteca</a>
+                <Link to="/pinacoteca">Pinacoteca</Link>
               </li>
               <li>
-                <a href="/torri">Centro: Due Torri, portici</a>
+                <Link to="/torri">Centro: Due Torri, portici</Link>
               </li>
               <li>
-                <a href="/meridiana">Centro: Chiese, San Petronio e la meridiana </a>
+                <Link to="/meridiana">Centro: Chiese, San Petronio e la meridiana </Link>
               </li>
             </ul>
           </div>
           <div className="colonne pt">
-            <h3><a href="javascript:void(0)" className="name">Modena</a></h3>
+            <h3><Link className="name">Modena</Link></h3>
             <ul className="list-unstyled foot-menu-collapsed collapse m-0">
               <li>
-                <a href="javascript:void(0)">Prossimamente</a>
-              </li>
-              <li>
-                -
-              </li>
-              <li>
-                -
-              </li>
-              <li>
-                -
-              </li>
-              <li>
-                -
-              </li>
-            </ul>
-          </div>
-          <div className="colonne pt">
-            <h3><a href="javascript:void(0)" className="name">Ferrara</a></h3>
-            <ul className="list-unstyled foot-menu-collapsed collapse m-0">
-              <li>
-                <a href="javascript:void(0)">Prossimamente</a>
+                <Link>Prossimamente</Link>
               </li>
               <li>
                 -
@@ -80,10 +63,10 @@ export default function Footer()
             </ul>
           </div>
           <div className="colonne pt">
-            <h3><a href="javascript:void(0)" className="name">Parma</a></h3>
+            <h3><Link className="name">Ferrara</Link></h3>
             <ul className="list-unstyled foot-menu-collapsed collapse m-0">
               <li>
-                <a href="javascript:void(0)">Prossimamente</a>
+                <Link>Prossimamente</Link>
               </li>
               <li>
                 -
@@ -100,10 +83,30 @@ export default function Footer()
             </ul>
           </div>
           <div className="colonne pt">
-            <h3><a href="javascript:void(0)" className="name">Piacenza</a></h3>
+            <h3><Link className="name">Parma</Link></h3>
             <ul className="list-unstyled foot-menu-collapsed collapse m-0">
               <li>
-                <a href="javascript:void(0)">Prossimamente</a>
+                <Link>Prossimamente</Link>
+              </li>
+              <li>
+                -
+              </li>
+              <li>
+                -
+              </li>
+              <li>
+                -
+              </li>
+              <li>
+                -
+              </li>
+            </ul>
+          </div>
+          <div className="colonne pt">
+            <h3><Link className="name">Piacenza</Link></h3>
+            <ul className="list-unstyled foot-menu-collapsed collapse m-0">
+              <li>
+                <Link>Prossimamente</Link>
               </li>
               <li>
                 -
@@ -125,15 +128,15 @@ export default function Footer()
         <br/><br/><br/>
       </div>
       <br/>
-      <h2><a href="/ringraziamenti" id="ringraziamenti">Autori e Ringraziamenti</a></h2>
+      <h2><Link to="/ringraziamenti" id="ringraziamenti">Autori e Ringraziamenti</Link></h2>
       <h3 className="sottoTitolo">Realizzato da</h3>
       <br/>
       <div className="righe loghi">
         <a href="https://www.iisbelluzzifioravanti.gov.it/" title="Belluzzi Fioravanti" target="_blank">
-          <img src={logoBF}/>
+          <img src={logoBF} alt="logoBF"/>
         </a>
         <a href="https://www.liceorighibologna.it/" title="Liceo Righi" target="_blank">
-          <img src={logoRighi} id="imgRighi"/>
+          <img src={logoRighi} alt="logoRighi" id="imgRighi"/>
         </a>
       </div>
 
@@ -144,13 +147,13 @@ export default function Footer()
       <br/>
       <div className="righe loghi">
         <a href="https://www.regione.emilia-romagna.it/" title="Regione Emilia-Romagna" target="_blank">
-          <img src={logoNero} id="imgER"/>
+          <img src={logoNero} alt="logo Emilia Romagna" id="imgER"/>
         </a>
         <a href="http://www.comune.bologna.it/" title="Comune di Bologna" target="_blank">
-          <img src={logoComune}/>
+          <img src={logoComune} alt="logo Comune di Bologna"/>
         </a>
         <a href="https://www.gov.uk/world/organisations/british-embassy-rome.it" title="Ambasciata britannica Roma" target="_blank">
-          <img src={logoAmbasciata} id="imgAmbasciata"/>
+          <img src={logoAmbasciata} alt="logo Ambasciata britannica Roma" id="imgAmbasciata"/>
         </a>
       </div>
 
@@ -161,19 +164,19 @@ export default function Footer()
       <br/>
       <div className="righe loghi collaborazioni">
         <a href="https://www.museociviltacontadina.bo.it/" title="Museo della Civiltà Contadina" target="_blank">
-          <img src={logoContadina} id="civiltaCC"/>
+          <img src={logoContadina} alt="logo Museo della Civiltà Contadina" id="civiltaCC"/>
         </a>
         <a href="http://www.comune.bologna.it/museorisorgimento/" title="Museo Civico del Risorgimento" target="_blank">
-          <img src={logoRisorgimento}/>
+          <img src={logoRisorgimento} alt="logo Museo Civico del Risorgimento"/>
         </a>
         <a href="http://www.archiginnasio.it/" title="Archiginnasio" target="_blank">
-          <img src={logoArchiginnasio}/>
+          <img src={logoArchiginnasio} alt="logo Archiginnasio"/>
         </a>
         <a href="https://www.8cento.org/?lang=it" title="8cento" target="_blank">
-          <img src={logoOttocento}/>
+          <img src={logoOttocento} alt="logo 8cento"/>
         </a>
         <a href="https://www.lookupradio.it" title="Radio Lookup" target="_blank">
-          <img src={logoRadio}/>
+          <img src={logoRadio} alt="logo Radio Lookup"/>
         </a>
       </div>
     </footer>

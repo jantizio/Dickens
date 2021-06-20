@@ -5,6 +5,13 @@ import grey from "@material-ui/core/colors/grey";
 import "./css/header.css";
 import "./css/all.css";
 import {Link} from "react-router-dom";
+import PROXY from "../../proxy";
+
+const
+  path=PROXY+"/header/img?img=",
+  logo=path+"logo",
+  ita=path+"bandiera&bandiera=ita",
+  eng=path+"bandiera&bandiera=eng";
 
 const AntSwitch = withStyles((theme) => ({
 	root: {
@@ -63,15 +70,15 @@ export default function Header({chLingua})
 			<header className="header">
 			<div className="wrapper">
 				<div className="logo dim">
-				<img src="/header/img?img=logo" alt="logo" />
+				<img src={logo} alt="logo" />
 				</div>
 				<div className="title dim">DICKENS IN EMILIA romagna</div>
 				<nav className="nav dim">
-				<img src="/header/img?img=bandiera&bandiera=ita" alt="italiano" style={{"opacity": state.itaOp}} />
+				<img src={ita} alt="italiano" style={{"opacity": state.itaOp}} />
 						<div className="switch">
 							<AntSwitch checked={state.checked} onChange={handleChange} name="checkedC" />
 						</div>
-						<img src="/header/img?img=bandiera&bandiera=eng" alt="english" style={{"opacity": state.engOp}} />
+						<img src={eng} alt="english" style={{"opacity": state.engOp}} />
 						<Link to="/emiliaRomagna"><i className="fas fa-home"></i></Link>
 				</nav>
 			</div>
