@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import axios from "axios";
 import ReactHtmlParser from "react-html-parser";
 import PROXY from "../proxy.js";
+import {Link} from "react-router-dom";
 
 class Testo extends Component
 {
@@ -32,9 +33,26 @@ class Testo extends Component
             this.render();
         }
     }
+    sostituzione=(string)=>
+    {
+        string=string.split("|");
+        for(let i=0;i<string.length;i++)
+        {
+            string[i]=ReactHtmlParser(string[i]);
+            for(let j=0;j<string[i].length;j++)
+            {
+                if(string[i][j]==="$")
+                {
+                    let splittato=string[i].split("$");
+                    string[i]=(<Link to={splittato[0]}>{splittato[1]}</Link>);
+                }
+            }
+        }
+        return string;
+    }
     render()
     {
-        if(this.state.isLoad) return <p id={"txt"+this.state.id}>{ReactHtmlParser(this.state.info)}</p>;
+        if(this.state.isLoad) return <p id={"txt"+this.state.id}>{this.sostituzione(this.state.info)}</p>;
         else return <p>Loading...</p>;
     }
 }
