@@ -1,0 +1,1 @@
+Long "one module" plate, equal to one hundredth part of the height between the hole and the vertical point on the floor (which is indeed 100 modules)

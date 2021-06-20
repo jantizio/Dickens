@@ -1,0 +1,11 @@
+.tour, .tour td, .tour th {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.tour {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 2em;
+}

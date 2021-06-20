@@ -1,0 +1,117 @@
+.footer {
+  background-color: #000;
+  background-image: url(http://dickensinemiliaromagna.it:5000/footer/img?img=sfondo);
+  color: white;
+  text-shadow: 3px 2px #222222;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.footer h2{
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px 0;
+	letter-spacing: 4px;
+	font-size: 3em;
+	font-weight: 500;
+}
+.container {
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.righe{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 23px;
+  margin-left: 23px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: center;
+}
+.colonne{
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+  position: relative;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.footer h3{
+  font-size: 30px;
+  color: rgb(243, 243, 243);
+}
+.list-unstyled {
+  /* padding-left: 0; */
+  list-style: none;
+}
+.righe a {
+  color: white;
+  text-shadow: 3px 2px #222222;
+  text-decoration: none;
+  background-color: transparent;
+}
+.footer li{
+  padding-top: 6%;
+  font-size: 20px;
+}
+.footer hr{
+  height: 1px;
+  margin-left: 8.8%;
+  margin-right: 17%;
+}
+.footer img {
+  max-width: 200px;
+  margin-right: 30px;
+}
+.footer .loghi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.pt{
+  padding-top: 65px;
+}
+.name{
+  color: whitesmoke;
+}
+.sottoTitolo{
+  text-align: center;
+}
+
+.collaborazioni img {
+  height: 100px;
+}
+
+#ringraziamenti{
+  color:whitesmoke;
+  text-decoration: none;
+}
+
+#ringraziamenti:hover{
+  opacity: 1;
+  color: #00378a;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+#imgRighi{
+  height: 128px;
+}
+
+#imgER{
+  max-width: inherit;
+}
+
+#imgAmbasciata{
+  height: 115px;
+}
+
+#civiltaCC {
+  max-width: 450px;
+}

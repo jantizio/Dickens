@@ -1,0 +1,63 @@
+<table class="tour">
+  <tr>
+    <td>luglio 1844</td>
+    <td>Dickens parte per l’Italia con la famiglia. Passa per Parigi e Marsiglia. Da Marsiglia a Genova via mare.</td>
+  </tr>
+  <tr>
+    <td>16 luglio 1844</td>
+    <td>Arrivo ad Albaro, un sobborgo di Genova. Sistemazione a Villa Bagnarello, la “Pink Jail”.<br/>“in una delle più splendide posizioni immaginabili. [...] Una decrepita, tetra, spettrale, echeggiante e sinistra casa disadorna: questo è; come non ne ho mai né viste né immaginate.”
+</td>
+  </tr>
+  <tr>
+    <td>23 settembre 1844</td>
+    <td>Trasferimento dei Dickens nell’elegante Palazzo delle Peschiere, a Genova</td>
+  </tr>
+  <tr>
+    <td>6-21 novembre 1844</td>
+    <td>Viaggio nel Nord (Piacenza, Parma, Modena, Bologna: 9-10 novembre; Ferrara: 11 novembre; Venezia: 12-13 novembre; Verona: 15 novembre; Cremona: 16 novembre; Milano: 18-21 novembre)</td>
+  </tr>
+  <tr>
+    <td>novembre 1844</td>
+    <td>Dickens parte per Londra per leggere in anteprima agli amici The Chimes, composto a Genova. Attraversa il passo del Sempione.</td>
+  </tr>
+  <tr>
+    <td>20 dicembre 1844</td>
+    <td>Rientro alle Peschiere a Genova.</td>
+  </tr>
+  <tr>
+    <td>30 gennaio-6 febbraio 1845</td>
+    <td>Vacanza romana con la moglie Catherine.</td>
+  </tr>
+  <tr>
+    <td>9-26 febbraio 1845</td>
+    <td>A Napoli con Catherine e la cognata Georgina Hogart.</td>
+  </tr>
+  <tr>
+    <td>26 febbraio – 2 marzo 1845</td>
+    <td>Da Napoli a Roma</td>
+  </tr>
+  <tr>
+    <td>2-25 marzo 1845</td>
+    <td>Ancora a Roma, raggiunti dai coniugi De La Rue: Émile De La Rue era un banchiere svizzero residente a Genova, che aveva sposato Augusta Granet, figlia di inglesi, anch’essi residenti a Genova e per questo divenuti amici dei Dickens.</td>
+  </tr>
+  <tr>
+    <td>25 marzo – 9 aprile 1845</td>
+    <td>Viaggio di rientro a Genova con varie soste (a Firenze dal 31 marzo al 4 aprile).</td>
+  </tr>
+  <tr>
+    <td>9 giugno 1845</td>
+    <td>Partenza per l’Inghilterra. Attraversamento del San Gottardo.</td>
+  </tr>
+  <tr>
+    <td>21 gennaio 1846</td>
+    <td>Esce il Numero 1 del “Daily News” con la prima delle 8 Travelling letters sul viaggio italiano (le altre risalgono al 24, 31 gennaio; 9, 16, 26 febbraio; 2 e 11 marzo).</td>
+  </tr>
+  <tr>
+    <td>18 maggio 1846</td>
+    <td>Viene pubblicato Pictures from Italy.</td>
+  </tr>
+  <tr>
+    <td>1853</td>
+    <td>Dickens fa un secondo viaggio in Italia: il 20 novembre è a Firenze e il 25 a Venezia. In quei giorni passa anche per Bologna, dove, in una lettera del 25 novembre, racconta solo di essersi fermato a bere un tè. cfr. The letters of Charles Dickens, edited by his sister-in-law and his eldest daughter 1833 to 1870, London, Macmillan and Co., 1909 (First Edition 1893), p. 32, n. 320.</td>
+  </tr>
+</table>

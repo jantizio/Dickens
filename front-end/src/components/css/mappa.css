@@ -1,0 +1,52 @@
+.livello {
+	margin: 0 auto;
+	position: relative;
+	width: 45%;
+	/*left: 50%;
+	transform: translateX(-50%);*/
+	display: block;
+}
+
+.livello .bg {
+	width: 100%
+}
+.icona{
+	position: absolute;
+}
+.icona:hover {
+	transition: transform 2s;
+	transform: rotateY(360deg);
+	z-index: 10;
+}
+
+
+#meridiana{/*meridiana*/
+	top: 20.6%;
+	left: 34.8%;
+	width: 15%;
+}
+
+#certosa{ /*certosa*/
+	top: 50%;
+	left: 24%;
+	width: 12%;
+}
+#dueTorri{ /*due torri*/
+	top: 20%;
+	left: 68%;
+	width: 8%;
+}
+#pinacoteca{/*pinacoteca*/
+	top: 37%;
+	left: 56%;
+	width: 14%;
+}
+#pellegrino{/*pellegrino*/
+	top: 38%;
+	left: 30%;
+	width: 17%;
+}
+
+.livello:hover > .icona:not(:hover) {
+  filter: blur(2px);
+}

@@ -1,0 +1,62 @@
+<table class="tour">
+  <tr>
+    <td>July 1844</td>
+    <td>Dickens leaves for Italy with his family. Passes through Paris and Marseille. From Marseille to Genoa by sea.</td>
+  </tr>
+  <tr>
+    <td>16th July 1844</td>
+    <td>Arrival in Albaro, a suburb of Genoa. Accommodation in Villa Bagnarello, the "Pink Jail".</td>
+  </tr>
+  <tr>
+    <td>23 September 1844</td>
+    <td>Transfer of  Dickens to the elegant Peschiere Palace, Genoa</td>
+  </tr>
+  <tr>
+    <td>6-21 November 1844</td>
+    <td>Journey to the North (Piacenza, Parma, Modena, Bologna: 9-10 November; Ferrara: November 11; Venice: 12-13 November; Verona: 15 November; Cremona: 16 November; Milan: 18-21 November)</td>
+  </tr>
+  <tr>
+    <td>November 1844</td>
+    <td>Dickens leaves for London to preview The Chimes, composed in Genoa. Crosses the Semplon Pass.</td>
+  </tr>
+  <tr>
+    <td>20 December 1844</td>
+    <td>Return to the Peschiere in Genoa.</td>
+  </tr>
+  <tr>
+    <td>30 January-6 February 1845</td>
+    <td>A Napoli con Catherine e la cognata Georgina Hogart.</td>
+  </tr>
+  <tr>
+    <td>9-26 February 1845</td>
+    <td>In Naples with Catherine and sister-in-law Georgina Hogart.</td>
+  </tr>
+  <tr>
+    <td>26 February – 2 March 1845</td>
+    <td>From Naples to Rome</td>
+  </tr>
+  <tr>
+    <td>2-25 March 1845</td>
+    <td>Still in Rome, joined by the de La Rue spouses: Émile De La Rue was a Swiss banker living in Genoa, who had married Augusta Granet, daughter of Englishmen, also residing in Genoa and for this reason became friends of Dickens’.</td>
+  </tr>
+  <tr>
+    <td>25 March– 9 April 1845</td>
+    <td>Going back to Genoa with  different stops (in Florence from 31st March to 4th April)</td>
+  </tr>
+  <tr>
+    <td>9 June 1845</td>
+    <td>Leaving for England. Crossing San Gottardo passage.</td>
+  </tr>
+  <tr>
+    <td>21 January 1846</td>
+    <td>Issue 1 of the "Daily News" is published with the first of the 8 Travelling letters on the Italian journey (the others date back to 24, 31 January; 9, 16, 26 February; 2 and 11 March).</td>
+  </tr>
+  <tr>
+    <td>18 may 1846</td>
+    <td>Pictures from Italy is released.</td>
+  </tr>
+  <tr>
+    <td>1853</td>
+    <td>Dickens makes a second trip to Italy: on November 20th he is in Florence and on the 25th in Venice. In those days he also passed through Bologna, where, in a letter of November 25, he says only that he stopped to drink tea. cf. The letters of Charles Dickens, edited by his sister-in-law and his eldest daughter 1833 to 1870, London, Macmillan and Co., 1909 (First Edition 1893), p. 32, n. 320.</td>
+  </tr>
+</table>
