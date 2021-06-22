@@ -1,1 +1,6 @@
-Thanks
+The interdisciplinary activity has seen the collaboration of many teachers from various disciplines: <br/>
+Computer science: Prof. Salvatore Martello and ITP Prof. Giuseppe Cunsolo (I.I.S. Belluzzi-Fioravanti)<br/>
+History and Literature: Prof. Patrizia La Micela (IIS Belluzzi-Fioravanti)<br/>
+Physics: Prof. Gaetano Passarelli (IIS Belluzzi-Fioravanti) for the precious contributions on the Sundial of San Petronio<br/>
+Mathematics and Physics: Prof. Stefano Giacovelli (Righi High School)<br/>
+History of Art: Prof. Francesco Di Lucca (Righi High School)

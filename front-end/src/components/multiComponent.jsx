@@ -1335,13 +1335,7 @@ class Multi extends Component
 
         case "ringraziamenti":
 
-        struttura.push((<h2 class="subtitle">{txt[16]}</h2>))
-
-        temp = (<div class="paragrafo">
-        {txt[0]}
-        </div>)
-
-        struttura.push(temp);
+        struttura.push((<h2 class="subtitle">{txt[0]}</h2>))
 
         temp = (<div class="paragrafo">
         {txt[1]}
@@ -1409,21 +1403,13 @@ class Multi extends Component
 
         struttura.push(temp);
 
-        struttura.push(<h2 class="sezione">Referenti Progetto:</h2>)
-
         temp = (<div class="paragrafo">
         {txt[12]}
         </div>)
 
         struttura.push(temp);
 
-        struttura.push(<h2 class="sezione">Altri docenti coinvolti:</h2>);
-
-        temp = (<div class="paragrafo">
-        {txt[13]}
-        </div>)
-
-        struttura.push(temp);
+        struttura.push(<h2 class="sezione">{txt[13]}</h2>)
 
         temp = (<div class="paragrafo">
         {txt[14]}
@@ -1431,8 +1417,22 @@ class Multi extends Component
 
         struttura.push(temp);
 
+        struttura.push(<h2 class="sezione">{txt[15]}</h2>);
+
         temp = (<div class="paragrafo">
-        {txt[15]}
+        {txt[16]}
+        </div>)
+
+        struttura.push(temp);
+
+        temp = (<div class="paragrafo">
+        {txt[17]}
+        </div>)
+
+        struttura.push(temp);
+
+        temp = (<div class="paragrafo">
+        {txt[18]}
         </div>)
 
         struttura.push(temp);

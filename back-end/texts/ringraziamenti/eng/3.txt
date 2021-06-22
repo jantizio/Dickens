@@ -1,3 +1,49 @@
-Despite the epidemiological situation, in the school year 2020-2021 the students started the site of the project achieved a great level of in-depth study. They focused on a wide range of topics such as the idea of the Grand Tour and the carriage that transported Dickens for the majority of his Italian travels, Dickens' observations during the journey through the view of the Emilian countryside, the historical setting of the time and the insights related to the various aspects of the city of Bologna about which Dickens wrote in the book Pictures from Italy.<br/>
-
-In the school year 2021-2022 the site will be completed by two other classes of the same schools in order to include the other Emilian cities visited by Dickens (Piacenza, Parma, Modena and Ferrara).
+<table class="ringra">
+        <tr>
+          <th>Class 5Bi</th>
+          <th>Class 5U</th>
+        </tr>
+        <tr>
+          <td>
+            AOUSSAR HAMZA<br/>
+            COLOMBI DAVIDE<br/>
+            CRESCENTINI FEDERICO<br/>
+            DE SIMONI NICOLO'<br/>
+            DEGLI ESPOSTI NICOLO'<br/>
+            FIANDRI ROBERT LOUIS<br/>
+            LAMBERTI FELIPE<br/>
+            MAZZONI GIANMARCO<br/>
+            MEDHAT SAAD FARQAD<br/>
+            MOHAMED EL DIMERDASH MOHAMED<br/>
+            NERI ALESSANDRO<br/>
+            OMAIR AIMEN<br/>
+            PISCHETOLA EMANUELE<br/>
+            POLACCHINI RICCARDO<br/>
+            RIGHI IRENE<br/>
+            RIZZO SIMONE<br/>
+            SHI MING JUN<br/>
+            VERATTI FEDERICO
+          </td>
+          <td>
+            ANGELLA LETIZIA<br/>
+            BENASSI SAMUEL<br/>
+            BENINI SIMONE<br/>
+            BOMBARDI RICCARDO<br/>
+            CASALINI ELISA<br/>
+            CORROPPOLI SIMONE<br/>
+            DONDINI ALICE<br/>
+            FABBRI LORENZO<br/>
+            KIRATI KARIM<br/>
+            LATINI RICCARDO<br/>
+            LESSI LORENZO<br/>
+            MAGLIONE MARCO<br/>
+            MARCHI ARIANNA<br/>
+            MATTIOLI FILIPPO<br/>
+            MOLTEDO ALESSANDRA<br/>
+            RAVAIOLI GIOVANNI<br/>
+            ROSSI DANIELE<br/>
+            VALLONE RICCARDO<br/>
+            ZALUNARDO MATTEO<br/>
+          </td>
+        </tr>
+      </table>

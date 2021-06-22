@@ -1,15 +1,19 @@
-.ringra{
+.ringra {
   margin: 0 auto;
   font-size: 1.4em;
 }
 
-.ringra td, .ringra th {
+.ringra td,
+.ringra th {
   padding: 5px 100px;
   text-align: center;
 }
 
-.sezione{
+.sezione {
   font-size: 3em;
+}
+
+.sezione p {
   padding-bottom: 10px;
   border-bottom: 3px solid black;
   margin: 15px;
@@ -22,6 +26,6 @@
   line-height: 1.5em;
 }*/
 
-.padding{
+.padding {
   margin-top: 80px;
 }
