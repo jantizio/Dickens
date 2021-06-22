@@ -1,3 +1,3 @@
-<sup id="1">1</sup> <a href="https://pinacotecabologna.beniculturali.it/it/content_page/item/403-strage-degli-innocenti">https://pinacotecabologna.beniculturali.it/it/content_page/item/403-strage-degli-innocenti</a><br/>
-<sup id="2">2</sup> <a href="https://pinacotecabologna.beniculturali.it/it/content_page/item/318-sansone-vittorioso">https://pinacotecabologna.beniculturali.it/it/content_page/item/318-sansone-vittorioso</a><br/>
+<sup id="1">1</sup> <a href="https://pinacotecabologna.beniculturali.it/it/content_page/item/403-strage-degli-innocenti" target="_blank">https://pinacotecabologna.beniculturali.it/it/content_page/item/403-strage-degli-innocenti</a><br/>
+<sup id="2">2</sup> <a href="https://pinacotecabologna.beniculturali.it/it/content_page/item/318-sansone-vittorioso" target="_blank">https://pinacotecabologna.beniculturali.it/it/content_page/item/318-sansone-vittorioso</a><br/>
 <sup id="3">3</sup> Catalogo generale della Pinacoteca Naionale di Bologna<br/>

@@ -1,5 +1,5 @@
 <p class="title">BIBLIOGRAPHY:</p>
 Pinacoteca Nazionale di Bologna<br/>
-<a href="https://pinacotecabologna.beniculturali.it/">https://pinacotecabologna.beniculturali.it/</a><br/>
-<a href="https://pinacotecabologna.beniculturali.it/it/content_page/37-sala-23-i-carracci">https://pinacotecabologna.beniculturali.it/it/content_page/37-sala-23-i-carracci</a><br/>
+<a href="https://pinacotecabologna.beniculturali.it/" target="_blank">https://pinacotecabologna.beniculturali.it/</a><br/>
+<a href="https://pinacotecabologna.beniculturali.it/it/content_page/37-sala-23-i-carracci" target="_blank">https://pinacotecabologna.beniculturali.it/it/content_page/37-sala-23-i-carracci</a><br/>
 General Catalogue of the Pinacoteca Naionale di Bologna<br/>
