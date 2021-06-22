@@ -45,7 +45,6 @@ class Testo extends Component
                 if(typeof string[i][j] === "string" && string[i][j].includes(separatore))
                 {
                     let splittato=string[i][j].split(separatore);
-                    console.log(splittato);
                     string[i]=(<Link to={splittato[0]}>{splittato[1]}</Link>);
                 }
             }
