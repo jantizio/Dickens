@@ -3,6 +3,7 @@ import axios from "axios";
 import ReactHtmlParser from "react-html-parser";
 import PROXY from "../proxy.js";
 import {Link} from "react-router-dom";
+const delimitatore = "Ħ", separatore = "Ω";
 
 class Testo extends Component
 {
@@ -35,15 +36,16 @@ class Testo extends Component
     }
     sostituzione=(string)=>
     {
-        string=string.split("|");
+        string=string.split(delimitatore);
         for(let i=0;i<string.length;i++)
         {
             string[i]=ReactHtmlParser(string[i]);
             for(let j=0;j<string[i].length;j++)
             {
-                if(string[i][j]==="$")
+                if(typeof string[i][j] === "string" && string[i][j].includes(separatore))
                 {
-                    let splittato=string[i].split("$");
+                    let splittato=string[i][j].split(separatore);
+                    console.log(splittato);
                     string[i]=(<Link to={splittato[0]}>{splittato[1]}</Link>);
                 }
             }
