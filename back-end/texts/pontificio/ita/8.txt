@@ -1,4 +1,4 @@
 <p class="title">FONTI E RIFERIMENTI BIBLIOGRAFICI:</p>
-<a href="https://www.storiaememoriadibologna.it/">https://www.storiaememoriadibologna.it/</a><br/>
-<a href="https://it.wikipedia.org/">https://it.wikipedia.org/</a><br/>
+<a href="https://www.storiaememoriadibologna.it/" target="_blank">https://www.storiaememoriadibologna.it/</a><br/>
+<a href="https://it.wikipedia.org/" target="_blank">https://it.wikipedia.org/</a><br/>
 Impressioni d’Italia, Charles Dickens, a cura di Francesco Marroni, Editore Rocco Carabba, 2004<br/>

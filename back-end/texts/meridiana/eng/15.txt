@@ -1,7 +1,7 @@
 <sup id="1">1</sup> Pictures from Italy, Charles Dickens, Penguin Classics, 1998, page 72<br/>
 <sup id="2">2</sup> Ibidem<br/>
-<sup id="3">3</sup> (<a href="http://badigit.comune.bologna.it/mostre/dickens/3.htm">http://badigit.comune.bologna.it/mostre/dickens/3.htm</a>): Sulle tracce di Dickens, Biblioteca dell’Archiginnasio <br/>
-<sup id="4">4</sup> Giovanni Paltrinieri, Gnomonist in Bologna, <a href="http://lineameridiana.com/meridiane-2.html">http://lineameridiana.com/meridiane-2.html</a><br/>
+<sup id="3">3</sup> (<a href="http://badigit.comune.bologna.it/mostre/dickens/3.htm" target="_blank">http://badigit.comune.bologna.it/mostre/dickens/3.htm</a>): Sulle tracce di Dickens, Biblioteca dell’Archiginnasio <br/>
+<sup id="4">4</sup> Giovanni Paltrinieri, Gnomonist in Bologna, <a href="http://lineameridiana.com/meridiane-2.html" target="_blank">http://lineameridiana.com/meridiane-2.html</a><br/>
 <sup id="5">5</sup> “Strenna Storica Bolognese”, Anno decimo, by Comitato per Bologna Storica e Artistica, Pàtron editore<br/>
 <sup id="6">6</sup> Strenna Storica Bolognese”, Anno LV - 2005, by Comitato per Bologna Storica e Artistica, Pàtron editore<br/>
 <sup id="7">7</sup> “Strenna Storica Bolognese”, Anno decimo, by Comitato per Bologna Storica e Artistica, Pàtron editore<br/>
@@ -9,6 +9,6 @@
 <sup id="9">9</sup> Ibidem<br/>
 <sup id="10">10</sup> “Strenna Storica Bolognese”, Anno decimo, by Comitato per Bologna Storica e Artistica, Pàtron editore<br/>
 <sup id="11">11</sup> Ibidem<br/>
-<sup id="12">12</sup>  <a href="http://www.eanweb.com/2012/la-meridiana-in-s-petronio-a-bologna/">http://www.eanweb.com/2012/la-meridiana-in-s-petronio-a-bologna/</a><br/>
+<sup id="12">12</sup>  <a href="http://www.eanweb.com/2012/la-meridiana-in-s-petronio-a-bologna/" target="_blank">http://www.eanweb.com/2012/la-meridiana-in-s-petronio-a-bologna/</a><br/>
 <sup id="13">13</sup> “Strenna Storica Bolognese”, Anno LV - 2005, by Comitato per Bologna Storica e Artistica, Pàtron editore<br/>
-<sup id="14">14</sup> <a href="https://www.basilicadisanpetronio.org/basilica/la-meridiana/">https://www.basilicadisanpetronio.org/basilica/la-meridiana/</a><br/>
+<sup id="14">14</sup> <a href="https://www.basilicadisanpetronio.org/basilica/la-meridiana/" target="_blank">https://www.basilicadisanpetronio.org/basilica/la-meridiana/</a><br/>

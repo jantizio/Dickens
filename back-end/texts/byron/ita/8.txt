@@ -1,4 +1,4 @@
 <p class="title">FONTI E RIFERIMENTI BIBLIOGRAFICI:</p>
-<a href="https://www.bibliotecasalaborsa.it/content/mappascrittori/autori/lord_byron">https://www.bibliotecasalaborsa.it/content/mappascrittori/autori/lord_byron</a><br/>
-<a href="https://www.storiaememoriadibologna.it/lord-byron-a-bologna-2105-evento">https://www.storiaememoriadibologna.it/lord-byron-a-bologna-2105-evento</a><br>
+<a href="https://www.bibliotecasalaborsa.it/content/mappascrittori/autori/lord_byron" target="_blank">https://www.bibliotecasalaborsa.it/content/mappascrittori/autori/lord_byron</a><br/>
+<a href="https://www.storiaememoriadibologna.it/lord-byron-a-bologna-2105-evento" target="_blank">https://www.storiaememoriadibologna.it/lord-byron-a-bologna-2105-evento</a><br>
 Biografia di un cimitero italiano. La certosa di Bologna, Gian Marco Vidor, Il Mulino<br/>

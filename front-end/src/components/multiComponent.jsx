@@ -94,7 +94,7 @@ class Multi extends Component
          </div>
          <div class="imgname">Certosa | Bologna</div>
          <div class="imgdescription">
-           La Certosa, è uno dei cimiteri più importanti d'Italia
+         {txt[4]}
          </div>
        </div>
 
@@ -104,7 +104,7 @@ class Multi extends Component
          </div>
          <div class="imgname">Teatro Farnese | Parma</div>
          <div class="imgdescription">
-           Il Teatro Farnese è tra i più importanti teatri d'Italia
+         {txt[5]}
          </div>
        </div>
 
@@ -112,9 +112,9 @@ class Multi extends Component
          <div>
            <img class="angoloimg" src={PROXY+"/emiliaRomagna/img/4"} alt="Cattedrale"/>
          </div>
-         <div class="imgname">Cattedrale S.G. | Ferrara</div>
+         <div class="imgname">Cattedrale S. G. | Ferrara</div>
          <div class="imgdescription">
-           La Cattedrale S.Giorgio è una delle più importanti d'Italia
+         {txt[6]}
          </div>
        </div>
 
@@ -124,7 +124,7 @@ class Multi extends Component
          </div>
          <div class="imgname">Duomo Modena | Modena</div>
          <div class="imgdescription">
-           Il Duomo di Modena, è uno dei più importanti d'Italia
+         {txt[7]}
          </div>
        </div>
      </div>)
@@ -136,12 +136,12 @@ class Multi extends Component
 
       struttura.push((<h2 class="subtitle" id="h2">BOLOGNA</h2>))
       temp = (<div class="livello animate__animated animate__bounceInDown">
-      <img src={PROXY+"/bologna/img/1"} class="bg"/>
-      <Link to="/meridiana"><img class="icona" id="meridiana" src={PROXY+"/bologna/img/2"}/></Link>
-      <Link to="/certosa"><img class="icona" id="certosa" src={PROXY+"/bologna/img/3"}/></Link>
-      <Link to="/torri"><img class="icona" id="dueTorri" src={PROXY+"/bologna/img/4"}/></Link>
-      <Link to="/pinacoteca"><img class="icona" id="pinacoteca" src={PROXY+"/bologna/img/5"}/></Link>
-      <Link to="/pellegrino"><img class="icona" id="pellegrino" src={PROXY+"/bologna/img/6"}/></Link>
+      <img src={PROXY+"/bologna/img/1"} class="bg" alt="foto bologna"/>
+      <Link to="/meridiana"><img class="icona" id="meridiana" src={PROXY+"/bologna/img/2"} alt="meridiana logo"/></Link>
+      <Link to="/certosa"><img class="icona" id="certosa" src={PROXY+"/bologna/img/3"} alt="certosa logo"/></Link>
+      <Link to="/torri"><img class="icona" id="dueTorri" src={PROXY+"/bologna/img/4"} alt="torri logo"/></Link>
+      <Link to="/pinacoteca"><img class="icona" id="pinacoteca" src={PROXY+"/bologna/img/5"} alt="pinacoteca logo"/></Link>
+      <Link to="/pellegrino"><img class="icona" id="pellegrino" src={PROXY+"/bologna/img/6"} alt="pellegrino logo"/></Link>
       </div>)
       struttura.push(temp);
       break;
