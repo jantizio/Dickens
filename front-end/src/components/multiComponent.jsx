@@ -55,7 +55,7 @@ class Multi extends Component
 
       case "emiliaRomagna":
 
-      struttura.push((<h2 class="subtitle">{txt[2]}</h2>));
+      struttura.push((<h2 className="subtitle">{txt[2]}</h2>));
 
 
       temp = (<center>
@@ -72,57 +72,57 @@ class Multi extends Component
 
       struttura.push(temp);
 
-      struttura.push((<h2 class="big">Trailer</h2>))
+      struttura.push((<h2 className="big">Trailer</h2>))
       temp = (<center><iframe width="560" height="315" src="https://www.youtube.com/embed/xzlx8pHlpko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>)
       struttura.push(temp);
 
 
-      struttura.push((<h2 class="big">{txt[1]}</h2>))
+      struttura.push((<h2 className="big">{txt[1]}</h2>))
 
-      temp = (<div class="testo">
+      temp = (<div className="testo">
         {txt[0]}
       </div>)
       struttura.push(temp);
 
-      struttura.push((<h2 class="big">{txt[3]}</h2>))
+      struttura.push((<h2 className="big">{txt[3]}</h2>))
 
-      temp = (<div class="wrapperP">
-       <div class="evidenza">
+      temp = (<div className="wrapperP">
+       <div className="evidenza">
          <div>
-           <img class="angoloimg" src={PROXY+"/emiliaRomagna/img/2"} alt="Certosa"/>
+           <img className="angoloimg" src={PROXY+"/emiliaRomagna/img/2"} alt="Certosa"/>
          </div>
-         <div class="imgname">Certosa | Bologna</div>
-         <div class="imgdescription">
+         <div className="imgname">Certosa | Bologna</div>
+         <div className="imgdescription">
          {txt[4]}
          </div>
        </div>
 
-       <div class="evidenza">
+       <div className="evidenza">
          <div>
-           <img class="angoloimg" src={PROXY+"/emiliaRomagna/img/3"} alt="Teatro Farnese"/>
+           <img className="angoloimg" src={PROXY+"/emiliaRomagna/img/3"} alt="Teatro Farnese"/>
          </div>
-         <div class="imgname">Teatro Farnese | Parma</div>
-         <div class="imgdescription">
+         <div className="imgname">Teatro Farnese | Parma</div>
+         <div className="imgdescription">
          {txt[5]}
          </div>
        </div>
 
-       <div class="evidenza">
+       <div className="evidenza">
          <div>
-           <img class="angoloimg" src={PROXY+"/emiliaRomagna/img/4"} alt="Cattedrale"/>
+           <img className="angoloimg" src={PROXY+"/emiliaRomagna/img/4"} alt="Cattedrale"/>
          </div>
-         <div class="imgname">Cattedrale S. G. | Ferrara</div>
-         <div class="imgdescription">
+         <div className="imgname">Cattedrale S. G. | Ferrara</div>
+         <div className="imgdescription">
          {txt[6]}
          </div>
        </div>
 
-       <div class="evidenza">
+       <div className="evidenza">
          <div>
-           <img class="angoloimg" src={PROXY+"/emiliaRomagna/img/5"} alt="Duomo"/>
+           <img className="angoloimg" src={PROXY+"/emiliaRomagna/img/5"} alt="Duomo"/>
          </div>
-         <div class="imgname">Duomo Modena | Modena</div>
-         <div class="imgdescription">
+         <div className="imgname">Duomo Modena | Modena</div>
+         <div className="imgdescription">
          {txt[7]}
          </div>
        </div>
@@ -133,9 +133,9 @@ class Multi extends Component
 
       case "bologna":
 
-      struttura.push((<h2 class="subtitle" id="h2">Bologna</h2>))
-      temp = (<div class="livello animate__animated animate__bounceInDown">
-      <img src={PROXY+"/bologna/img/1"} class="bg" alt="foto bologna"/>
+      struttura.push((<h2 className="subtitle" id="h2">Bologna</h2>))
+      temp = (<div className="livello animate__animated animate__bounceInDown">
+      <img src={PROXY+"/bologna/img/1"} className="bg" alt="foto bologna"/>
       <Link to="/meridiana"><img onMouseEnter={ () => window['changeH2']("Centro: Chiese, San Petronio e la meridiana") } onMouseLeave={ () => window['changeH2']("Bologna") } className="icona animate__animated" id="meridiana" src={PROXY+"/bologna/img/2"} alt="meridiana logo"/></Link>
       <Link to="/certosa"><img onMouseEnter={ () => window['changeH2']("Certosa") } onMouseLeave={ () => window['changeH2']("Bologna") } className="icona animate__animated" id="certosa" src={PROXY+"/bologna/img/3"} alt="certosa logo"/></Link>
       <Link to="/torri"><img onMouseEnter={ () => window['changeH2']("Centro: due torri, portici") } onMouseLeave={ () => window['changeH2']("Bologna") } className="icona animate__animated" id="dueTorri" src={PROXY+"/bologna/img/4"} alt="torri logo"/></Link>
@@ -146,256 +146,256 @@ class Multi extends Component
       break;
 
       case "byron":
-      struttura.push((<h2 class="subtitle">{txt[8]}</h2>))
-      temp = (<div class="paragrafo">
+      struttura.push((<h2 className="subtitle">{txt[8]}</h2>))
+      temp = (<div className="paragrafo">
       {txt[0]}
       {img[0]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[1]}
       {img[2]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[4]}
       {txt[1]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[2]}
       {img[3]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[3]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[4]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[5]}
       </div>)
       struttura.push(temp);
-      temp = (<div class="note">
+      temp = (<div className="note">
       {txt[6]}
       </div>)
       struttura.push(temp);
-      temp = (<div class="bibliografia">
+      temp = (<div className="bibliografia">
       {txt[7]}
       </div>)
       struttura.push(temp);
       break;
 
       case "carracci":
-      struttura.push((<h2 class="subtitle">{txt[7]}</h2>))
+      struttura.push((<h2 className="subtitle">{txt[7]}</h2>))
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[0]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[1]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[0]}
       {txt[2]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[3]}
       {img[3]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[4]}
       {img[1]}
       </div>)
       struttura.push(temp);
 
 
-      temp = (<div class="note">
+      temp = (<div className="note">
       {txt[5]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="bibliografia">
+      temp = (<div className="bibliografia">
       {txt[6]}
       </div>)
       struttura.push(temp);
       break;
 
       case "certosa":
-      struttura.push((<h2 class="subtitle">{txt[24]}</h2>))
+      struttura.push((<h2 className="subtitle">{txt[24]}</h2>))
       temp = (<center><iframe width="560" height="315" src="https://www.youtube.com/embed/ytLhQv3Y7WU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>)
       struttura.push(temp);
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[0]}
       {img[0]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[1]}
       {txt[1]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[2]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[3]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[4]}
       {tre[0]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {tre[1]}
       {txt[5]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[6]}
       {img[2]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[7]}
       {img[3]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[4]}
       {img[5]}
       {txt[8]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[6]}
       {txt[9]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[10]}
       {img[7]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[8]}
       {txt[11]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[12]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {tre[2]}
       {tre[3]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[13]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {tre[4]}
       {tre[5]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[9]}
       {txt[14]}
       </div>)
       struttura.push(temp);
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[15]}
       {img[10]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[11]}
       {txt[16]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[17]}
       {img[12]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[13]}
       {txt[18]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[19]}
       {img[14]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[15]}
       {txt[20]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[21]}
       {img[16]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[17]}
       {img[18]}
       </div>)
       struttura.push(temp);
 
 
-      temp = (<div class="note">
+      temp = (<div className="note">
       {txt[22]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="bibliografia">
+      temp = (<div className="bibliografia">
       {txt[23]}
       </div>)
       struttura.push(temp);
@@ -403,51 +403,51 @@ class Multi extends Component
 
 
       case "dickens":
-      struttura.push((<h2 class="subtitle">{txt[8]}</h2>))
-      temp = (<div class="paragrafo">
+      struttura.push((<h2 className="subtitle">{txt[8]}</h2>))
+      temp = (<div className="paragrafo">
       {txt[0]}
       {img[0]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[1]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[2]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[3]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[4]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[5]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[6]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[7]}
       </div>)
 
@@ -455,141 +455,141 @@ class Multi extends Component
       break;
 
       case "domenichino":
-      struttura.push((<h2 class="subtitle">{txt[10]}</h2>))
-      temp = (<div class="paragrafo">
+      struttura.push((<h2 className="subtitle">{txt[10]}</h2>))
+      temp = (<div className="paragrafo">
       {txt[0]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[1]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[2]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[3]}
       {img[0]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[4]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[5]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[6]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[1]}
       {txt[7]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="note">
+      temp = (<div className="note">
       {txt[8]}
       </div>)
       struttura.push(temp);
 
-      temp = (<div class="bibliografia">
+      temp = (<div className="bibliografia">
       {txt[9]}
       </div>)
       struttura.push(temp);
       break;
 
       case "torri":
-      struttura.push((<h2 class="subtitle">{txt[8]} </h2>));
+      struttura.push((<h2 className="subtitle">{txt[8]} </h2>));
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[0]}
       </div>);
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[0]}
       </div>);
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[1]}
       </div>);
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[1]}
       {img[2]}
       </div>);
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[3]}
       {img[4]}
       </div>);
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[2]}
       </div>);
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[5]}
       {img[6]}
       </div>);
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[7]}
       {img[8]}
       </div>);
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[3]}
       </div>);
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[4]}
       </div>);
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[5]}
       </div>);
 
       struttura.push(temp);
 
-      temp = (<div class="note">
+      temp = (<div className="note">
       {txt[6]}
       </div>);
 
       struttura.push(temp);
 
-      temp = (<div class="bibliografia">
+      temp = (<div className="bibliografia">
       {txt[7]}
       </div>);
 
@@ -598,130 +598,130 @@ class Multi extends Component
 
       case "tour":
 
-      struttura.push((<h2 class="subtitle">{txt[25]}</h2>))
+      struttura.push((<h2 className="subtitle">{txt[25]}</h2>))
 
       temp = (<center><iframe width="560" height="315" src="https://www.youtube.com/embed/aEbHjUwg8mE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>)
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[0]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[0]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[1]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[2]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[3]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[4]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[5]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[6]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[7]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[8]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[9]}
       {img[1]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[10]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[11]}
       {img[2]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[3]}
       {txt[12]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[13]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[14]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[15]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[16]}
       {img[4]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[17]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[5]}
       {txt[18]}
       </div>)
@@ -730,32 +730,32 @@ class Multi extends Component
 
       struttura.push(txt[19]);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[6]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[20]}
       {img[7]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[21]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {txt[22]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="paragrafo">
+      temp = (<div className="paragrafo">
       {img[8]}
       </div>)
 
@@ -763,13 +763,13 @@ class Multi extends Component
 
 
 
-      temp = (<div class="note">
+      temp = (<div className="note">
       {txt[23]}
       </div>)
 
       struttura.push(temp);
 
-      temp = (<div class="bibliografia">
+      temp = (<div className="bibliografia">
       {txt[24]}
       </div>)
 
@@ -778,7 +778,7 @@ class Multi extends Component
 
       case "meridiana":
 
-      struttura.push((<h2 class="subtitle">{txt[16]}</h2>))
+      struttura.push((<h2 className="subtitle">{txt[16]}</h2>))
 
       temp = (<center>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/-nsHpi2JGE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  style={{marginRight: 10 + 'em'}} allowfullscreen></iframe>
@@ -787,117 +787,117 @@ class Multi extends Component
         struttura.push(temp);
 
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[0]}
         {img[0]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[1]}
         {txt[1]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[2]}
         {txt[2]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[3]}
         {txt[3]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[4]}
         {img[4]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[5]}
         {txt[5]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[6]}
         {img[6]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[7]}
         {txt[7]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[8]}
         {img[8]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[9]}
         {txt[9]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[10]}
         {txt[10]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[11]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[12]}
         {img[11]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[13]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[12]}
         {img[13]}
         {img[14]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="note">
+        temp = (<div className="note">
         {txt[14]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="bibliografia">
+        temp = (<div className="bibliografia">
         {txt[15]}
         </div>)
         struttura.push(temp);
         break;
 
         case "moda":
-        struttura.push((<h2 class="subtitle">{txt[10]}</h2>))
+        struttura.push((<h2 className="subtitle">{txt[10]}</h2>))
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[0]}
         {img[0]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[1]}
         {img[1]}
         {img[2]}
@@ -905,13 +905,13 @@ class Multi extends Component
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[2]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[3]}
         {img[4]}
         {img[5]}
@@ -919,55 +919,55 @@ class Multi extends Component
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[3]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[4]}
         {img[6]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[5]}
         {img[7]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[6]}
         {img[8]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[7]}
         {img[9]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[8]}
         {img[10]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[9]}
         {img[11]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[12]}
         {img[13]}
         </div>)
@@ -976,65 +976,65 @@ class Multi extends Component
         break;
 
         case "pellegrino":
-        struttura.push((<h2 class="subtitle">{txt[10]}</h2>))
+        struttura.push((<h2 className="subtitle">{txt[10]}</h2>))
 
         temp = (<center><iframe width="560" height="315" src="https://www.youtube.com/embed/4TBDizHJ9Cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[0]}
         {img[0]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[1]}
         {img[1]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[2]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[3]}
         {img[2]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[4]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[3]}
         {img[4]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[5]}
         </div>)
         struttura.push(temp);
 
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[6]}
         </div>)
         struttura.push(temp);
 
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[5]}
         {img[6]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[7]}
         {txt[7]}
         </div>)
@@ -1042,86 +1042,86 @@ class Multi extends Component
 
 
 
-        temp = (<div class="note">
+        temp = (<div className="note">
         {txt[8]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="bibliografia">
+        temp = (<div className="bibliografia">
         {txt[9]}
         </div>)
         struttura.push(temp);
         break;
 
         case "campagna":
-        struttura.push((<h2 class="subtitle">{txt[9]}</h2>))
+        struttura.push((<h2 className="subtitle">{txt[9]}</h2>))
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[0]}
         {img[0]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[1]}
         {txt[1]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[2]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[3]}
         {img[2]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[4]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[5]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[3]}
         {img[4]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[5]}
         {img[6]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[6]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="note">
+        temp = (<div className="note">
         {txt[7]}
         </div>)
 
         struttura.push(temp);
         
-        temp = (<div class="bibliografia">
+        temp = (<div className="bibliografia">
         {txt[8]}
         </div>)
         struttura.push(temp);
@@ -1129,97 +1129,97 @@ class Multi extends Component
 
         case "pinacoteca":
 
-        struttura.push((<h2 class="subtitle">{txt[17]}</h2>))
-        temp = (<div class="paragrafo">
+        struttura.push((<h2 className="subtitle">{txt[17]}</h2>))
+        temp = (<div className="paragrafo">
         {txt[0]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[1]}
         {img[0]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[2]}
         {img[1]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[3]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[4]}
         {img[2]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[5]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[6]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[7]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[8]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[9]}
         </div>)
         struttura.push(temp);
 
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[10]}
         </div>)
         struttura.push(temp);
 
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[11]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[12]}
         </div>)
         struttura.push(temp);
 
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[13]}
         </div>)
         struttura.push(temp);
 
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[14]}
         </div>)
         struttura.push(temp);
 
 
-        temp = (<div class="note">
+        temp = (<div className="note">
         {txt[15]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="bibliografia">
+        temp = (<div className="bibliografia">
         {txt[16]}
         </div>)
         struttura.push(temp);
@@ -1227,51 +1227,51 @@ class Multi extends Component
 
 
         case "pontificio":
-        struttura.push((<h2 class="subtitle">{txt[8]}</h2>))
+        struttura.push((<h2 className="subtitle">{txt[8]}</h2>))
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[0]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[1]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[2]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[3]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[4]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[5]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="note">
+        temp = (<div className="note">
         {txt[6]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="bibliografia">
+        temp = (<div className="bibliografia">
         {txt[7]}
         </div>)
 
@@ -1279,54 +1279,54 @@ class Multi extends Component
         break;
 
         case "reni":
-        struttura.push((<h2 class="subtitle">{txt[9]}</h2>))
+        struttura.push((<h2 className="subtitle">{txt[9]}</h2>))
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[0]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[1]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[0]}
         {txt[2]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[3]}
 
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[4]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[5]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[6]}
         {img[1]}
         </div>)
         struttura.push(temp);
 
 
-        temp = (<div class="note">
+        temp = (<div className="note">
         {txt[7]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="bibliografia">
+        temp = (<div className="bibliografia">
         {txt[8]}
         </div>)
         struttura.push(temp);
@@ -1334,103 +1334,103 @@ class Multi extends Component
 
         case "ringraziamenti":
 
-        struttura.push((<h2 class="subtitle">{txt[0]}</h2>))
+        struttura.push((<h2 className="subtitle">{txt[0]}</h2>))
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[1]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[2]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[3]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[4]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[5]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[6]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[7]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[8]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[9]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[10]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[11]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[12]}
         </div>)
 
         struttura.push(temp);
 
-        struttura.push(<h2 class="sezione">{txt[13]}</h2>)
+        struttura.push(<h2 className="sezione">{txt[13]}</h2>)
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[14]}
         </div>)
 
         struttura.push(temp);
 
-        struttura.push(<h2 class="sezione">{txt[15]}</h2>);
+        struttura.push(<h2 className="sezione">{txt[15]}</h2>);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[16]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[17]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[18]}
         </div>)
 
@@ -1438,9 +1438,9 @@ class Multi extends Component
         break;
 
         case "rossini":
-        struttura.push((<h2 class="subtitle">{txt[1]}</h2>))
+        struttura.push((<h2 className="subtitle">{txt[1]}</h2>))
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[0]}
         {txt[0]}
         </div>)
@@ -1449,15 +1449,15 @@ class Multi extends Component
         break;
 
         case "sibaud":
-        struttura.push((<h2 class="subtitle">{txt[12]}</h2>))
+        struttura.push((<h2 className="subtitle">{txt[12]}</h2>))
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[0]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[0]}
         {img[1]}
         </div>)
@@ -1465,48 +1465,48 @@ class Multi extends Component
         struttura.push(temp);
 
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[2]}
         </div>)
 
         struttura.push(temp);
 
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[2]}
         {txt[3]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[4]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[5]}
         </div>)
 
         struttura.push(temp);
 
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[6]}
         </div>)
 
         struttura.push(temp);
 
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[7]}
         {tre[0]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[3]}
         {txt[8]}
 
@@ -1514,21 +1514,21 @@ class Multi extends Component
 
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[9]}
         {img[4]}
         </div>)
 
         struttura.push(temp);
 
-        temp = (<div class="note">
+        temp = (<div className="note">
         {txt[10]}
         </div>)
 
         struttura.push(temp);
 
 
-        temp = (<div class="bibliografia">
+        temp = (<div className="bibliografia">
         {txt[11]}
         </div>)
 
@@ -1537,68 +1537,68 @@ class Multi extends Component
         break;
 
         case "storia":
-        struttura.push((<h2 class="subtitle">{txt[11]}</h2>))
+        struttura.push((<h2 className="subtitle">{txt[11]}</h2>))
 
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[0]}
         {txt[0]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[1]}
         {img[1]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[2]}
         {txt[2]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[3]}
         {img[3]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[4]}
         {txt[4]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[5]}
         {img[5]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {img[6]}
         {txt[6]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[7]}
         {img[7]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="paragrafo">
+        temp = (<div className="paragrafo">
         {txt[8]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="note">
+        temp = (<div className="note">
         {txt[9]}
         </div>)
         struttura.push(temp);
 
-        temp = (<div class="bibliografia">
+        temp = (<div className="bibliografia">
         {txt[10]}
         </div>)
         struttura.push(temp);
