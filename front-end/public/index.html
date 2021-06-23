@@ -8,8 +8,6 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <script type="text/javascript" src="http://dickensinemiliaromagna.it:5000/header/js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -42,3 +40,25 @@
     -->
   </body>
 </html>
+<script>
+window.addEventListener("load", function(event) {
+	var h = 50;
+	/* if(window.location.pathname.includes("contenuti")){
+	  h = 420;
+	} */
+	var header = document.querySelector(".header");
+
+	window.onscroll = function(event) {
+		if (window.scrollY > h) {
+			header.classList.add("transparency");
+		} else {
+			header.classList.remove("transparency");
+		}
+	};
+});
+
+function changeH2(testo) {
+	document.getElementById("h2").innerHTML = testo;
+}
+
+</script>
