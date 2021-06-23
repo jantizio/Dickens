@@ -3,6 +3,7 @@ import axios from "axios";
 import Testo from "./testo";
 import {Pannellum} from "pannellum-react";
 import {Link} from "react-router-dom";
+import 'animate.css'
 import "./css/paragrafi.css";
 import "./css/stile.css";
 import "./css/tour.css";
@@ -10,8 +11,6 @@ import "./css/layer1.css";
 import "./css/mappa.css";
 import "./css/ringraziamenti.css";
 import PROXY from "../proxy.js";
-
-
 
 class Multi extends Component
 {
@@ -134,14 +133,14 @@ class Multi extends Component
 
       case "bologna":
 
-      struttura.push((<h2 class="subtitle" id="h2">BOLOGNA</h2>))
+      struttura.push((<h2 class="subtitle" id="h2">Bologna</h2>))
       temp = (<div class="livello animate__animated animate__bounceInDown">
       <img src={PROXY+"/bologna/img/1"} class="bg" alt="foto bologna"/>
-      <Link to="/meridiana"><img class="icona" id="meridiana" src={PROXY+"/bologna/img/2"} alt="meridiana logo"/></Link>
-      <Link to="/certosa"><img class="icona" id="certosa" src={PROXY+"/bologna/img/3"} alt="certosa logo"/></Link>
-      <Link to="/torri"><img class="icona" id="dueTorri" src={PROXY+"/bologna/img/4"} alt="torri logo"/></Link>
-      <Link to="/pinacoteca"><img class="icona" id="pinacoteca" src={PROXY+"/bologna/img/5"} alt="pinacoteca logo"/></Link>
-      <Link to="/pellegrino"><img class="icona" id="pellegrino" src={PROXY+"/bologna/img/6"} alt="pellegrino logo"/></Link>
+      <Link to="/meridiana"><img onMouseEnter={ () => window['changeH2']("Centro: Chiese, San Petronio e la meridiana") } onMouseLeave={ () => window['changeH2']("Bologna") } className="icona animate__animated" id="meridiana" src={PROXY+"/bologna/img/2"} alt="meridiana logo"/></Link>
+      <Link to="/certosa"><img onMouseEnter={ () => window['changeH2']("Certosa") } onMouseLeave={ () => window['changeH2']("Bologna") } className="icona animate__animated" id="certosa" src={PROXY+"/bologna/img/3"} alt="certosa logo"/></Link>
+      <Link to="/torri"><img onMouseEnter={ () => window['changeH2']("Centro: due torri, portici") } onMouseLeave={ () => window['changeH2']("Bologna") } className="icona animate__animated" id="dueTorri" src={PROXY+"/bologna/img/4"} alt="torri logo"/></Link>
+      <Link to="/pinacoteca"><img onMouseEnter={ () => window['changeH2']("Pinacoteca") } onMouseLeave={ () => window['changeH2']("Bologna") } className="icona animate__animated" id="pinacoteca" src={PROXY+"/bologna/img/5"} alt="pinacoteca logo"/></Link>
+      <Link to="/pellegrino"><img onMouseEnter={ () => window['changeH2']("Albergo del pellegrino") } onMouseLeave={ () => window['changeH2']("Bologna") } className="icona animate__animated" id="pellegrino" src={PROXY+"/bologna/img/6"} alt="pellegrino logo"/></Link>
       </div>)
       struttura.push(temp);
       break;

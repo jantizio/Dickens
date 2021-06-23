@@ -72,7 +72,7 @@ export default function Header({chLingua})
 				<div className="logo dim">
 				<img src={logo} alt="logo" />
 				</div>
-				<div className="title dim">DICKENS IN EMILIA romagna</div>
+				<div className="title dim">DICKENS IN EMILIA ROMAGNA</div>
 				<nav className="nav dim">
 				<img src={ita} alt="italiano" style={{"opacity": state.itaOp}} />
 						<div className="switch">
