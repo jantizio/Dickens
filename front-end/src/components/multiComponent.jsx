@@ -11,6 +11,7 @@ import "./css/layer1.css";
 import "./css/mappa.css";
 import "./css/ringraziamenti.css";
 import PROXY from "../proxy.js";
+import Content from "./layouts/content";
 
 class Multi extends Component
 {
@@ -1613,6 +1614,10 @@ class Multi extends Component
       return struttura;
     }
 
+  layouts(txt, img, tre){
+    return <Content pagina={this.state.pagina} txt={txt} img={img} tre={tre}/>
+  }
+
 
     render()
     {
@@ -1622,7 +1627,7 @@ class Multi extends Component
         for(let i=1;i<=this.state.qtaTxt;i++) txts.push(<Testo key={"txt"+i} id={i} lingua={this.state.lingua} pagina={this.state.pagina} tipo={"txt"} ref={ref=>this.child.push(ref)} />);
         for(let i=1;i<=this.state.qtaImg;i++) divs.push(<div className="img"><img src={PROXY+"/"+this.state.pagina+"/img/"+i} alt="not found" key={"img"+i} id={"img"+i} /><Testo key={"did"+i} id={i} lingua={this.state.lingua} pagina={this.state.pagina} tipo={"didascalia"} ref={ref=>this.child.push(ref)} /></div>);
         for(let i=1;i<=this.state.qtaTre;i++) divsTre.push(<div className="img"><Pannellum width="90%" height="70vh" image={PROXY+"/"+this.state.pagina+"/tre/"+i} pitch={10} yaw={180} hfov={110} autoLoad /><Testo key={"didTre"+i} id={i} lingua={this.state.lingua} pagina={this.state.pagina} tipo={"didascaliaTre"} ref={ref=>this.child.push(ref)} /></div>);
-        return this.layout(txts,divs,divsTre);
+        return this.layouts(txts,divs,divsTre);
       }
       else return <p>Loading...</p>;
     }
