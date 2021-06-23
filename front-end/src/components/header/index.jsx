@@ -3,7 +3,8 @@ import {Switch} from '@material-ui/core';
 import {withStyles} from '@material-ui/core/styles';
 import grey from "@material-ui/core/colors/grey";
 import "./css/header.css";
-import "./css/all.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
 import {Link} from "react-router-dom";
 import PROXY from "../../proxy";
 
@@ -66,7 +67,7 @@ export default function Header({chLingua})
 		chLingua();
 	};
 	return (
-		<div>
+		<React.Fragment>
 			<header className="header">
 			<div className="wrapper">
 				<div className="logo dim">
@@ -79,11 +80,14 @@ export default function Header({chLingua})
 							<AntSwitch checked={state.checked} onChange={handleChange} name="checkedC" />
 						</div>
 						<img src={eng} alt="english" style={{"opacity": state.engOp}} />
-						<Link to="/emiliaRomagna"><i className="fas fa-home"></i></Link>
+						<Link to="/emiliaRomagna">
+							{/* <i className="fas fa-home"></i> */}
+							<FontAwesomeIcon icon={faHome} />
+						</Link>
 				</nav>
 			</div>
 			</header>
 			<div className="space-top"></div>
-			</div>
+			</React.Fragment>
 	);
 };
