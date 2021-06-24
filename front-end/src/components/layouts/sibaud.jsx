@@ -1,0 +1,81 @@
+function build(txt, img, tre) {
+  let struttura = [];
+  let temp;
+  struttura.push(<h2 className="subtitle">{txt[12]}</h2>);
+
+  temp = <div className="paragrafo">{img[0]}</div>;
+
+  struttura.push(temp);
+
+  temp = (
+    <div className="paragrafo">
+      {txt[0]}
+      {img[1]}
+    </div>
+  );
+
+  struttura.push(temp);
+
+  temp = <div className="paragrafo">{txt[2]}</div>;
+
+  struttura.push(temp);
+
+  temp = (
+    <div className="paragrafo">
+      {img[2]}
+      {txt[3]}
+    </div>
+  );
+
+  struttura.push(temp);
+
+  temp = <div className="paragrafo">{txt[4]}</div>;
+
+  struttura.push(temp);
+
+  temp = <div className="paragrafo">{txt[5]}</div>;
+
+  struttura.push(temp);
+
+  temp = <div className="paragrafo">{txt[6]}</div>;
+
+  struttura.push(temp);
+
+  temp = (
+    <div className="paragrafo">
+      {txt[7]}
+      {tre[0]}
+    </div>
+  );
+
+  struttura.push(temp);
+
+  temp = (
+    <div className="paragrafo">
+      {img[3]}
+      {txt[8]}
+    </div>
+  );
+
+  struttura.push(temp);
+
+  temp = (
+    <div className="paragrafo">
+      {txt[9]}
+      {img[4]}
+    </div>
+  );
+
+  struttura.push(temp);
+
+  temp = <div className="note">{txt[10]}</div>;
+
+  struttura.push(temp);
+
+  temp = <div className="bibliografia">{txt[11]}</div>;
+
+  struttura.push(temp);
+  return struttura;
+}
+
+export default build;

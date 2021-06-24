@@ -23,38 +23,55 @@ import {
 } from "./path";
 
 class Content extends Component {
-  state = {
-    pagina: this.props.pagina,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      pagina: this.props.pagina,
+    };
+  }
 
   factory = () => {
     switch (this.state.pagina) {
       case "emiliaRomagna":
-        return (
-          <EmiliaRomagna
-            txt={this.props.txt}
-            img={this.props.img}
-            tre={this.props.tre}
-          />
-        );
-
+        return EmiliaRomagna(this.props.txt, this.props.img, this.props.tre);
       case "bologna":
-        return (
-          <Bologna
-            txt={this.props.txt}
-            img={this.props.img}
-            tre={this.props.tre}
-          />
-        );
-
+        return Bologna(this.props.txt, this.props.img, this.props.tre);
       case "byron":
-        return (
-          <Byron
-            txt={this.props.txt}
-            img={this.props.img}
-            tre={this.props.tre}
-          />
-        );
+        return Byron(this.props.txt, this.props.img, this.props.tre);
+      case "certosa":
+        return Certosa(this.props.txt, this.props.img, this.props.tre);
+      case "campagna":
+        return Campagna(this.props.txt, this.props.img, this.props.tre);
+      case "carracci":
+        return Carracci(this.props.txt, this.props.img, this.props.tre);
+      case "dickens":
+        return Dickens(this.props.txt, this.props.img, this.props.tre);
+      case "domenichino":
+        return Domenichino(this.props.txt, this.props.img, this.props.tre);
+      case "meridiana":
+        return Meridiana(this.props.txt, this.props.img, this.props.tre);
+      case "moda":
+        return Moda(this.props.txt, this.props.img, this.props.tre);
+      case "pellegrino":
+        return Pellegrino(this.props.txt, this.props.img, this.props.tre);
+      case "pinacoteca":
+        return Pinacoteca(this.props.txt, this.props.img, this.props.tre);
+      case "pontificio":
+        return Pontificio(this.props.txt, this.props.img, this.props.tre);
+      case "reni":
+        return Reni(this.props.txt, this.props.img, this.props.tre);
+      case "ringraziamenti":
+        return Ringraziamenti(this.props.txt, this.props.img, this.props.tre);
+      case "rossini":
+        return Rossini(this.props.txt, this.props.img, this.props.tre);
+      case "sibaud":
+        return Sibaud(this.props.txt, this.props.img, this.props.tre);
+      case "storia":
+        return Storia(this.props.txt, this.props.img, this.props.tre);
+      case "torri":
+        return Torri(this.props.txt, this.props.img, this.props.tre);
+      case "tour":
+        return Tour(this.props.txt, this.props.img, this.props.tre);
 
       default:
         return (

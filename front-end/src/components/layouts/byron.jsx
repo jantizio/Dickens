@@ -1,41 +1,52 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import PROXY from "../../proxy.js";
+function build(txt, img, tre) {
+  let struttura = [];
+  let temp;
+  struttura.push(<h2 className="subtitle">{txt[8]}</h2>);
+  temp = (
+    <div className="paragrafo">
+      {txt[0]}
+      {img[0]}
+    </div>
+  );
+  struttura.push(temp);
 
-class Byron extends Component {
-  state = {
-    txt: this.props.txt,
-    img: this.props.img,
-    tre: this.props.tre,
-  };
-  render() {
-    return (
-      <React.Fragment>
-        <h2 className="subtitle">{this.state.txt[8]}</h2>
-        <div className="paragrafo">
-          {this.state.txt[0]}
-          {this.state.img[0]}
-        </div>
-        <div className="paragrafo">
-          {this.state.img[1]}
-          {this.state.img[2]}
-        </div>
-        <div className="paragrafo">
-          {this.state.img[4]}
-          {this.state.txt[1]}
-        </div>
-        <div className="paragrafo">
-          {this.state.txt[2]}
-          {this.state.img[3]}
-        </div>
-        <div className="paragrafo">{this.state.txt[3]}</div>
-        <div className="paragrafo">{this.state.txt[4]}</div>
-        <div className="paragrafo">{this.state.txt[5]}</div>
-        <div className="note">{this.state.txt[6]}</div>
-        <div className="bibliografia">{this.state.txt[7]}</div>
-      </React.Fragment>
-    );
-  }
+  temp = (
+    <div className="paragrafo">
+      {img[1]}
+      {img[2]}
+    </div>
+  );
+  struttura.push(temp);
+
+  temp = (
+    <div className="paragrafo">
+      {img[4]}
+      {txt[1]}
+    </div>
+  );
+  struttura.push(temp);
+
+  temp = (
+    <div className="paragrafo">
+      {txt[2]}
+      {img[3]}
+    </div>
+  );
+  struttura.push(temp);
+
+  temp = <div className="paragrafo">{txt[3]}</div>;
+  struttura.push(temp);
+
+  temp = <div className="paragrafo">{txt[4]}</div>;
+  struttura.push(temp);
+
+  temp = <div className="paragrafo">{txt[5]}</div>;
+  struttura.push(temp);
+  temp = <div className="note">{txt[6]}</div>;
+  struttura.push(temp);
+  temp = <div className="bibliografia">{txt[7]}</div>;
+  struttura.push(temp);
+  return struttura;
 }
 
-export default Byron;
+export default build;
