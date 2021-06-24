@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import Testo from "./testo";
 import { Pannellum } from "pannellum-react";
-import { Link } from "react-router-dom";
 import "animate.css";
 import "./css/paragrafi.css";
 import "./css/stile.css";
