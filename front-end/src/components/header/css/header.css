@@ -5,9 +5,10 @@
 .wrapper {
   width: 100%;
   max-width: 1700px;
+  padding: 0 15px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   font-weight: 500;
@@ -25,29 +26,34 @@
 .transparency {
   background: rgba(0, 0, 0, 0.7);
 }
-.header .logo {
+/* .header .logo {
   height: 80px;
   align-self: left;
+} */
+.header .logo {
+  width: 100%;
+  max-width: 20em;
 }
+
 .header .logo img {
-  height: 100%;
+  width: 100%;
 }
-.nav {
+.header .nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.nav a {
+.header .nav a {
   text-decoration: none;
   display: inline-flex;
 }
-.nav a i {
+.header .nav a i {
   padding-left: 15px;
   color: white;
   font-size: 4em;
 }
 
-.nav svg {
+.header .nav svg {
   padding-left: 15px;
   color: white;
   font-size: 3.5rem;
@@ -55,18 +61,20 @@
 
 .header .title {
   text-transform: uppercase;
-  font-size: 3.6em;
+  font-size: 2.5em;
   text-align: center;
   letter-spacing: 5px;
+  display: none;
 }
-.header .dim {
+/* .header .dim {
   min-width: 250px;
-}
+} */
 
 .subtitle {
   max-width: var(--h2-width);
   text-align: center;
-  margin-bottom: 20px;
+  margin: 150px 0 20px;
+  /* margin-bottom: 20px; */
   padding: 15px 0;
   border-bottom: 3px solid black;
   /* text formatting */
@@ -90,8 +98,27 @@
 }
 
 .space-top {
-  height: 100px;
+  /* height: 100px; */
 }
 .switch {
   padding: 0 10px;
+}
+
+@media (min-width: 26.5625em) {
+  .header {
+    /* background: green; */
+  }
+
+  .wrapper {
+    justify-content: space-between;
+  }
+  .subtitle {
+    margin: 90px 0 20px;
+  }
+}
+
+@media (min-width: 60em) {
+  .header .title {
+    display: block;
+  }
 }
