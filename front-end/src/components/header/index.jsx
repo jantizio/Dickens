@@ -46,6 +46,7 @@ const AntSwitch = withStyles((theme) => ({
   },
   checked: {},
 }))(Switch);
+
 export default function Header({ chLingua }) {
   const [state, setState] = React.useState({
     checked: false,
@@ -61,31 +62,28 @@ export default function Header({ chLingua }) {
     chLingua();
   };
   return (
-    <React.Fragment>
-      <header className="header">
-        <div className="wrapper">
-          <div className="logo dim">
-            <img src={logo} alt="logo" />
-          </div>
-          <div className="title dim">DICKENS IN EMILIA ROMAGNA</div>
-          <nav className="nav dim">
-            <img src={ita} alt="italiano" style={{ opacity: state.itaOp }} />
-            <div className="switch">
-              <AntSwitch
-                checked={state.checked}
-                onChange={handleChange}
-                name="checkedC"
-              />
-            </div>
-            <img src={eng} alt="english" style={{ opacity: state.engOp }} />
-            <Link to="/emiliaRomagna">
-              {/* <i className="fas fa-home"></i> */}
-              <FontAwesomeIcon icon={faHome} />
-            </Link>
-          </nav>
+    <header className="header">
+      <div className="wrapper">
+        <div className="logo">
+          <img src={logo} alt="logo" />
         </div>
-      </header>
-      <div className="space-top"></div>
-    </React.Fragment>
+        <div className="title">DICKENS IN EMILIA ROMAGNA</div>
+        <nav className="nav">
+          <img src={ita} alt="italiano" style={{ opacity: state.itaOp }} />
+          <div className="switch">
+            <AntSwitch
+              checked={state.checked}
+              onChange={handleChange}
+              name="checkedC"
+            />
+          </div>
+          <img src={eng} alt="english" style={{ opacity: state.engOp }} />
+          <Link to="/emiliaRomagna">
+            {/* <i className="fas fa-home"></i> */}
+            <FontAwesomeIcon icon={faHome} />
+          </Link>
+        </nav>
+      </div>
+    </header>
   );
 }
