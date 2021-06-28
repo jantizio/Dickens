@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^12.8.3",
     "animate.css": "^4.1.1",
     "axios": "^0.21.1",
+    "image-map-resizer": "^1.0.10",
     "pannellum-react": "^1.2.4",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
