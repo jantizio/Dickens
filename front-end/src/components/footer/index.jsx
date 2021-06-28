@@ -26,13 +26,11 @@ export default function Footer() {
     >
       <div className="container">
         <div className="righe">
-          <div className="colonne pt">
+          <div className="colonne">
             <h3>
-              <Link to="/bologna" className="name">
-                Bologna
-              </Link>
+              <Link to="/bologna">Bologna</Link>
             </h3>
-            <ul className="list-unstyled foot-menu-collapsed collapse m-0">
+            <ul>
               <li>
                 <Link to="/pellegrino">Albergo del Pellegrino</Link>
               </li>
@@ -52,11 +50,11 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="colonne pt">
+          <div className="colonne">
             <h3>
-              <Link className="name">Modena</Link>
+              <Link>Modena</Link>
             </h3>
-            <ul className="list-unstyled foot-menu-collapsed collapse m-0">
+            <ul>
               <li>
                 <Link>Prossimamente</Link>
               </li>
@@ -66,11 +64,11 @@ export default function Footer() {
               <li>-</li>
             </ul>
           </div>
-          <div className="colonne pt">
+          <div className="colonne">
             <h3>
-              <Link className="name">Ferrara</Link>
+              <Link>Ferrara</Link>
             </h3>
-            <ul className="list-unstyled foot-menu-collapsed collapse m-0">
+            <ul>
               <li>
                 <Link>Prossimamente</Link>
               </li>
@@ -80,11 +78,11 @@ export default function Footer() {
               <li>-</li>
             </ul>
           </div>
-          <div className="colonne pt">
+          <div className="colonne">
             <h3>
-              <Link className="name">Parma</Link>
+              <Link>Parma</Link>
             </h3>
-            <ul className="list-unstyled foot-menu-collapsed collapse m-0">
+            <ul>
               <li>
                 <Link>Prossimamente</Link>
               </li>
@@ -94,11 +92,11 @@ export default function Footer() {
               <li>-</li>
             </ul>
           </div>
-          <div className="colonne pt">
+          <div className="colonne">
             <h3>
-              <Link className="name">Piacenza</Link>
+              <Link>Piacenza</Link>
             </h3>
-            <ul className="list-unstyled foot-menu-collapsed collapse m-0">
+            <ul>
               <li>
                 <Link>Prossimamente</Link>
               </li>
@@ -117,8 +115,8 @@ export default function Footer() {
           Autori e Ringraziamenti
         </Link>
       </h2>
+
       <h3 className="sottoTitolo">Realizzato da</h3>
-      <br />
       <div className="righe loghi">
         <a
           href="https://www.iisbelluzzifioravanti.gov.it/"
@@ -134,15 +132,11 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={logoRighi} alt="logoRighi" id="imgRighi" />
+          <img src={logoRighi} alt="logoRighi" />
         </a>
       </div>
 
-      <br />
-      <br />
-
       <h3 className="sottoTitolo">Con il patrocinio di </h3>
-      <br />
       <div className="righe loghi">
         <a
           href="https://www.regione.emilia-romagna.it/"
@@ -150,7 +144,7 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={logoNero} alt="logo Emilia Romagna" id="imgER" />
+          <img src={logoNero} alt="logo Emilia Romagna" />
         </a>
         <a
           href="http://www.comune.bologna.it/"
@@ -158,7 +152,11 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={logoComune} alt="logo Comune di Bologna" />
+          <img
+            src={logoComune}
+            alt="logo Comune di Bologna"
+            id="comuneBologna"
+          />
         </a>
         <a
           href="https://www.gov.uk/world/organisations/british-embassy-rome.it"
@@ -166,31 +164,19 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            src={logoAmbasciata}
-            alt="logo Ambasciata britannica Roma"
-            id="imgAmbasciata"
-          />
+          <img src={logoAmbasciata} alt="logo Ambasciata britannica Roma" />
         </a>
       </div>
 
-      <br />
-      <br />
-
       <h3 className="sottoTitolo">In collaborazione con </h3>
-      <br />
-      <div className="righe loghi collaborazioni">
+      <div className="righe loghi">
         <a
           href="https://www.museociviltacontadina.bo.it/"
           title="Museo della Civiltà Contadina"
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            src={logoContadina}
-            alt="logo Museo della Civiltà Contadina"
-            id="civiltaCC"
-          />
+          <img src={logoContadina} alt="logo Museo della Civiltà Contadina" />
         </a>
         <a
           href="http://www.comune.bologna.it/museorisorgimento/"
