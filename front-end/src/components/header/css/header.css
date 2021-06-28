@@ -66,10 +66,10 @@
   max-width: 30em; /*720px*/
   text-align: center;
   margin: 15rem 0 2rem;
-  padding: 1em 0.4em;
+  padding: 1.1rem 0.4em;
   border-bottom: 3px solid black;
   /* text formatting */
-  font-size: clamp(1.5em, 2vw, 2.4em);
+  font-size: clamp(1.9em, 2vw, 2.7em);
   letter-spacing: 0.167em;
   line-height: 1.7em;
   font-weight: 500;
