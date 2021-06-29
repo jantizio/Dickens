@@ -6,8 +6,11 @@ const navbar = function (event) {
   const subtitleOptions = {
     rootMargin: "-100px 0px 0px 0px",
   };
+  const footerOptions = {
+    // threshold: "0.8",
+    // rootMargin: "-1500px 0px 0px 0px",
+  };
 
-  const footerOptions = { threshold: "0.75" };
   const subtitleObserver = new IntersectionObserver(
     (entries, subtitleObserver) => {
       entries.forEach((entry) => {
@@ -26,8 +29,10 @@ const navbar = function (event) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           header.classList.add("invisible");
+          console.log("in", entry.intersectionRatio);
         } else {
           header.classList.remove("invisible");
+          console.log("out", entry.intersectionRatio);
         }
       });
     },
@@ -35,7 +40,7 @@ const navbar = function (event) {
   );
 
   subtitleObserver.observe(subtitle);
-  footerObserver.observe(footer);
+  // footerObserver.observe(footer);
 };
 
 // window.onload = navbar;
