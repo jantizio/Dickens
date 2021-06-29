@@ -7,12 +7,12 @@ function build(txt, img, tre) {
   struttura.push(<h2 className="subtitle">{txt[2]}</h2>);
 
   temp = (
-    <div class="center">
-      <div class="mappa">
+    <div className="center">
+      <div className="mappa">
         <img
           src={PROXY + "/emiliaRomagna/img/1"}
           alt="Mappa emilia romagna"
-          usemap="#emiliaromagna"
+          useMap="#emiliaromagna"
         />
         <map name="emiliaromagna">
           <Link to="/campagna">
