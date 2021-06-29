@@ -5,10 +5,13 @@
   width: 100%;
   position: fixed;
   z-index: 10;
-  transition: 0.5s;
+  transition: background 0.5s linear, margin-top 0.2s ease-in-out;
 }
 .transparency {
   background: rgba(0, 0, 0, 0.7);
+}
+.invisible {
+  margin-top: -90px;
 }
 
 .wrapper {
@@ -25,7 +28,7 @@
 
 .header .logo {
   width: 100%;
-  max-width: 20em;
+  max-width: 17em;
 }
 .header .logo img {
   width: 100%;

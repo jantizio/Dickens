@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import imageMapResize from "image-map-resizer";
+import navbar from "../js/observer";
 import {
   Bologna,
   Byron,
@@ -32,8 +33,8 @@ class Content extends Component {
   }
 
   componentDidMount = () => {
-    console.log("dai cazzo");
     imageMapResize();
+    navbar();
   };
 
   factory = () => {
