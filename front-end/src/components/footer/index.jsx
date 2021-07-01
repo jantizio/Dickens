@@ -5,16 +5,16 @@ import PROXY from "../../proxy";
 
 const path = PROXY + "/footer/img?img=",
   sfondo = path + "sfondo",
-  logoBF = path + "Logo-BF",
-  logoRighi = path + "logo_righi",
-  logoNero = path + "marchio_RER_NERO_2009_page-0001",
-  logoComune = path + "logo-comune-bianco-fix",
-  logoAmbasciata = path + "FCO_BE_IT_ROM_PS_opac0",
-  logoContadina = path + "cittametro_villa_smeraldi_png",
-  logoRisorgimento = path + "logo_risorgimento-opac0-bianco",
-  logoArchiginnasio = path + "ARCHIGINNASIO",
-  logoOttocento = path + "8cento_APS",
-  logoRadio = path + "logoRadio";
+  logoBF = path + "bf_logo",
+  logoRighi = path + "righi_logo",
+  logoRegione = path + "regione_logo",
+  logoComune = path + "comune_logo",
+  logoAmbasciata = path + "ambasciata_logo",
+  logoContadina = path + "contadina_logo",
+  logoRisorgimento = path + "risorgimento_logoBianco",
+  logoArchiginnasio = path + "archiginnasio_logo",
+  logoOttocento = path + "8cento_logo",
+  logoRadio = path + "radio_logo";
 
 export default function Footer() {
   return (
@@ -144,7 +144,7 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={logoNero} alt="logo Emilia Romagna" />
+          <img src={logoRegione} alt="logo Emilia Romagna" />
         </a>
         <a
           href="http://www.comune.bologna.it/"
