@@ -8,7 +8,7 @@
 }
 .paragrafo > p {
   /* font-size: 1.8rem; */
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-size: clamp(1.2rem, 1vw, 1.8rem);
   letter-spacing: 0.111em; /* 2px */
   word-spacing: 0.1em;
   line-height: 1.5;
