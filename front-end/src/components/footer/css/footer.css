@@ -107,7 +107,7 @@
 }
 
 .footer .loghi img {
-  width: 100%;
+  /* width: 100%; */
   min-height: 5em;
   max-height: 10em;
   display: block;
