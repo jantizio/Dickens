@@ -1,4 +1,4 @@
-<p class="titolo">FONTI E RIFERIMENTI BIBLIOGRAFICI:</p>
+<p class="title">FONTI E RIFERIMENTI BIBLIOGRAFICI:</p>
 Pinacoteca Nazionale di Bologna<br/>
 <a href="https://pinacotecabologna.beniculturali.it/" target="_blank">https://pinacotecabologna.beniculturali.it/</a><br/>
 <a href="https://pinacotecabologna.beniculturali.it/it/content_page/43-sala-29-i-grandi-formati" target="_blank">https://pinacotecabologna.beniculturali.it/it/content_page/43-sala-29-i-grandi-formati</a><br/>

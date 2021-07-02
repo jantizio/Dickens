@@ -1,11 +1,13 @@
-.tour, .tour td, .tour th {
+.tour,
+.tour td,
+.tour th {
   border: 1px solid black;
-  padding: 10px;
+  padding: 0.5em;
 }
 
 .tour {
   width: 80%;
   border-collapse: collapse;
   margin: 0 auto;
-  font-size: 2em;
+  font-size: 2rem;
 }

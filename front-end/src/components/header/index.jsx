@@ -1,93 +1,89 @@
 import React from "react";
-import {Switch} from '@material-ui/core';
-import {withStyles} from '@material-ui/core/styles';
+import { Switch } from "@material-ui/core";
+import { withStyles } from "@material-ui/core/styles";
 import grey from "@material-ui/core/colors/grey";
 import "./css/header.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
-import {Link} from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import PROXY from "../../proxy";
 
-const
-  path=PROXY+"/header/img?img=",
-  logo=path+"logo",
-  ita=path+"bandiera&bandiera=ita",
-  eng=path+"bandiera&bandiera=eng";
+const path = PROXY + "/header/img?img=",
+  logo = path + "logo",
+  ita = path + "bandiera&bandiera=ita",
+  eng = path + "bandiera&bandiera=eng";
 
 const AntSwitch = withStyles((theme) => ({
-	root: {
-	  width: 28,
-	  height: 16,
-	  padding: 0,
-	  display: 'flex',
-	},
-	switchBase: {
-	  padding: 2,
-	  color: grey[500],
-	  '&$checked': {
-		transform: 'translateX(12px)',
-		color: theme.palette.common.white,
-		'& + $track': {
-		  opacity: 1,
-		  backgroundColor: theme.palette.primary.main,
-		  borderColor: theme.palette.primary.main,
-		},
-	  },
-	},
-	thumb: {
-	  width: 12,
-	  height: 12,
-	  boxShadow: 'none',
-	},
-	track: {
-	  border: `1px solid ${theme.palette.grey[500]}`,
-	  borderRadius: 16 / 2,
-	  opacity: 1,
-	  backgroundColor: theme.palette.common.white,
-	},
-	checked: {},
-  }))(Switch);
-export default function Header({chLingua})
-{
-	const [state, setState]=React.useState(
-		{
-			checked: false,
-			itaOp: 1,
-			engOp: 0.5
-		}
-	);
-	const handleChange = (event) => {
-		setState(
-			{
-				checked:!state.checked,
-				itaOp: state.engOp,
-				engOp: state.itaOp
-			}
-		);
-		chLingua();
-	};
-	return (
-		<React.Fragment>
-			<header className="header">
-			<div className="wrapper">
-				<div className="logo dim">
-				<img src={logo} alt="logo" />
-				</div>
-				<div className="title dim">DICKENS IN EMILIA ROMAGNA</div>
-				<nav className="nav dim">
-				<img src={ita} alt="italiano" style={{"opacity": state.itaOp}} />
-						<div className="switch">
-							<AntSwitch checked={state.checked} onChange={handleChange} name="checkedC" />
-						</div>
-						<img src={eng} alt="english" style={{"opacity": state.engOp}} />
-						<Link to="/emiliaRomagna">
-							{/* <i className="fas fa-home"></i> */}
-							<FontAwesomeIcon icon={faHome} />
-						</Link>
-				</nav>
-			</div>
-			</header>
-			<div className="space-top"></div>
-			</React.Fragment>
-	);
-};
+  root: {
+    width: 28,
+    height: 16,
+    padding: 0,
+    display: "flex",
+  },
+  switchBase: {
+    padding: 2,
+    color: grey[500],
+    "&$checked": {
+      transform: "translateX(12px)",
+      color: theme.palette.common.white,
+      "& + $track": {
+        opacity: 1,
+        backgroundColor: theme.palette.primary.main,
+        borderColor: theme.palette.primary.main,
+      },
+    },
+  },
+  thumb: {
+    width: 12,
+    height: 12,
+    boxShadow: "none",
+  },
+  track: {
+    border: `1px solid ${theme.palette.grey[500]}`,
+    borderRadius: 16 / 2,
+    opacity: 1,
+    backgroundColor: theme.palette.common.white,
+  },
+  checked: {},
+}))(Switch);
+
+export default function Header({ chLingua }) {
+  const [state, setState] = React.useState({
+    checked: false,
+    itaOp: 1,
+    engOp: 0.5,
+  });
+  const handleChange = (event) => {
+    setState({
+      checked: !state.checked,
+      itaOp: state.engOp,
+      engOp: state.itaOp,
+    });
+    chLingua();
+  };
+  return (
+    <header className="header">
+      <div className="wrapper">
+        <div className="logo">
+          <img src={logo} alt="logo" />
+        </div>
+        <div className="title">DICKENS IN EMILIA ROMAGNA</div>
+        <nav className="nav">
+          <img src={ita} alt="italiano" style={{ opacity: state.itaOp }} />
+          <div className="switch">
+            <AntSwitch
+              checked={state.checked}
+              onChange={handleChange}
+              name="checkedC"
+            />
+          </div>
+          <img src={eng} alt="english" style={{ opacity: state.engOp }} />
+          <Link to="/emiliaRomagna">
+            {/* <i className="fas fa-home"></i> */}
+            <FontAwesomeIcon icon={faHome} />
+          </Link>
+        </nav>
+      </div>
+    </header>
+  );
+}

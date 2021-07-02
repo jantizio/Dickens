@@ -1,4 +1,4 @@
-BIBLIOGRAPHY:<br/>
+<p class="title">BIBLIOGRAPHY:</p>
 Dickens a Bologna e una memorabile visita alla Certosa, Roberto Martorelli and Valeria Roncuzzi, Minerva Edizioni.<br/>
 Pictures from Italy, Charles Dickens, Penguin Classics, 1998.<br/>
 Quel che vedono le nuvole, morphology and historical topographical evolution of the plain between via Emilia Reno Panaro and centopievese. Marefosca Editions, 2008, by Floriano Govoni, Pierangelo Pancaldi, Alberto Tampellini.<br/>

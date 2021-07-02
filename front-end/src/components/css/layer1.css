@@ -1,69 +1,78 @@
+.center {
+  margin: 2rem auto 0;
+  position: relative;
+  width: 90%;
+  text-align: center;
+}
+
+.mappa {
+  margin: 0 auto;
+  width: 90%;
+}
+
+img[usemap] {
+  border: none;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
 .big {
-	text-align: center;
-	margin: 0 auto;
-	padding: 20px 0;
-	letter-spacing: 4px;
-	font-size: 3em;
-	font-weight: 500;
+  font-size: clamp(1.8rem, 2vw, 2.5rem);
+  text-align: center;
+  margin: 1em 0;
+  letter-spacing: 0.16em;
+  font-weight: 500;
 }
 
-.testo{
-	margin: 0 auto;
-	max-width: 1200px;
+.testo {
+  margin: 0 auto;
+  max-width: 150ch;
 }
 
-.testo p{
-	color: black;
-	padding: 14px 16px;
-	font-size: 2.5em;
-	text-align: justify;
+.testo p {
+  padding: 1.4rem 1.6rem;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  text-align: justify;
 }
 
 .wrapperP {
-	padding-top: 40px;
-	padding-bottom: 40px;
+  padding: 4rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 2.5em;
 }
-.titimg{
-	text-align: center;
-	margin: 0 auto;
-	padding: 20px 0;
-	letter-spacing: 4px;
-	border-bottom: 3px solid black;
-	font-size: 3em;
-	font-weight: 200;
+
+.evidenza {
+  background: white;
+  width: 350px;
+  display: inline-block;
+  /* margin: auto; */
+  border-radius: 19px;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  transition: transform 0.2s;
+  max-width: 100%;
+  margin: 30px;
+}
+.evidenza:hover {
+  transform: scale(1.16);
 }
 
 .imgname {
-	font-size: 26px;
-	color: black;
-	font-weight: 700;
-	margin-bottom: 5px;
-	text-align: center;
+  font-size: clamp(1.9rem, 2vw, 2.4rem);
+  font-weight: 600;
+  padding: 0.3em;
+  margin-bottom: 0.4em;
+  text-align: center;
 }
 .imgdescription {
-	padding: 20px;
-	margin-bottom: 10px;
-}
-.evidenza {
-	background: white;
-	width: 300px;
-	display: inline-block;
-	margin: auto;
-	border-radius: 19px;
-	position: relative;
-	text-align: center;
-	box-shadow: -1px 15px 30px -12px black;
-	transition: transform .2s;
+  padding: 1em 1.5em;
+  font-size: clamp(1.1rem, 1vw, 1.3rem);
 }
 
-.angoloimg{
-	border-top-left-radius: 19px;
-	border-top-right-radius: 19px;
-}
-.divisore{
-	width:25px;
-	display: inline-block;
+.angoloimg {
+  border-radius: 19px 19px 0 0;
+  width: 100%;
 }

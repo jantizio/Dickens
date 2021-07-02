@@ -1,11 +1,12 @@
 .livello {
   margin: 0 auto;
   position: relative;
-  width: 45%;
+  width: 50%;
   /*left: 50%;
   transform: translateX(-50%);*/
   display: block;
   min-width: 30em;
+  max-width: 85em;
 }
 
 .livello .bg {

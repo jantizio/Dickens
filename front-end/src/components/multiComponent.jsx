@@ -87,14 +87,16 @@ class Multi extends Component {
         divsTre.push(
           <div className="img">
             <Pannellum
-              width="90%"
-              height="70vh"
+              width="100%"
+              height="656px"
               image={PROXY + "/" + this.state.pagina + "/tre/" + i}
-              pitch={10}
               yaw={180}
               hfov={110}
+              mouseZoom={"fullscreenonly"}
+              compass
               autoLoad
             />
+            {/* max(100%,500px) */}
             <Testo
               key={"didTre" + i}
               id={i}

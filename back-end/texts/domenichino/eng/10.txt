@@ -1,4 +1,4 @@
-<p class="titolo">BIBLIOGRAPHY:</p>
+<p class="title">BIBLIOGRAPHY:</p>
 Pinacoteca Nazionale di Bologna<br/>
 <a href="https://pinacotecabologna.beniculturali.it/" target="_blank">https://pinacotecabologna.beniculturali.it/</a><br/>
 <a href="https://pinacotecabologna.beniculturali.it/it/content_page/43-sala-29-i-grandi-formati" target="_blank">https://pinacotecabologna.beniculturali.it/it/content_page/43-sala-29-i-grandi-formati</a><br/>
