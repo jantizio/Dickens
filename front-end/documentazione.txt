@@ -1,0 +1,62 @@
+Front-end documentazione:
+
+La cartella public non contiene niente di rilevante.
+
+La cartella src invece ha:
+    il file proxy.js che contiene l'indirizzo del backend (se tutto va bene non ci sarà bisogno di toccarlo)
+    il file App.js contiene tutte le "routes" si tratta dei nomi che rimandano ad una pagina piuttosto che un'altra
+        per aggiungere una nuova pagina sarà necessario inserire una nuova route, in questo modo:
+        all'interno del tag Switch inserire 
+            <Route exact path="/name" component={()=><Multi lingua={this.state.lingua} pagina={"name"} ref={ref=>this.child=ref} />} />
+        dove name va sostituito con il nome che volete dare alla pagina
+
+    gli altri file sono file standard di un progetto react e non hanno niente di rilevante
+
+    passiamo alla cartella components, qui c'è la parte più importante del front-end.
+        multiComponent.jsx --> è il componente per visualizzare vario contenuto di diverso tipo (img, testo, 360, video)
+        testo.jsx --> è il componente che si occupa di visualizzare puro testo
+        YoutubeEmbed.jsx --> è il componente che si occupa di visualizzare un video youtube
+        DI FATTO QUESTI COMPONENTI SONO GIÀ PREDISPOSTI E NON NECESSITANO DI MODIFICHE
+
+        le cartelle css e js raggruppano normali file css e javascript
+
+        le cartelle footer e header contengono rispettivamente il componente per il footer e per l'header,
+        anche questi sono già conclusi e non dovrebbero necessitare modifiche.
+
+        la cartella layouts è quella con cui interagirete di più e quella in cui dovrete fare le modifiche per il front-end
+        all'interno della cartella ci sono 2 file chiave:
+            path.jsx --> questo file contiene tutti percorsi delle pagine, e per aggiungere una pagina nuova va inserito il suo path
+            content.jsx --> qui è presente uno switch che rimanda alla pagina giusta, se volete aggiungere una pagina nuova va inserito un nuovo case:
+                    case "name":
+                        return Name(this.props.txt, this.props.img, this.props.tre);
+                            in questo file sarà poi necessario importare il nome della pagina (con iniziale maiuscola) che volete aggiungere.
+            tutti gli altri file sono le descrizioni di come deve essere il layout di ogni pagina, esse sono
+            in sostanza degli array. Le combinazioni che sono state previste da noi sono:
+            
+            TITOLO DELLA PAGINA
+                <h2 className="subtitle">{txt[i]} </h2> --> dove i sta per l'indice in cui è contenuto il titolo
+            SOLO TESTO:
+                <div className="paragrafo">{txt[i]}</div> --> dove i sta per l'indice del paragrafo
+            SOLO UNA IMMAGINE
+                <div className="paragrafo">{img[i]}</div> --> dove i sta per l'indice dell'immagine
+            DUE IMMAGINI
+                (<div className="paragrafo">{img[i]}{img[i]}</div>)
+            TRE IMMAGINI
+                (<div className="paragrafo">{img[i]}{img[i]}{img[i]}</div>)
+            TESTO E IMMAGINE
+                (<div className="paragrafo">{txt[i]}{img[i]}</div>)
+            IMMAGINE A 360° E TESTO
+                (<div className="paragrafo">{tre[i}{txt[i]}</div>)
+            VIDEO YOUTUBE
+                (<div className="video-container"><YoutubeEmbed embedId="" /></div>) --> embedId va riempito con l'id specifico dell'embed
+                                                                                        per esempio se il link di yt è https://www.youtube.com/watch?v=dQw4w9WgXcQ allora l'id sarà dQw4w9WgXcQ
+            NOTE
+                <div className="note">{txt[i]}</div> --> i è l'indice delle note
+            BIBLIOGRAFIA
+                <div className="bibliografia">{txt[i]}</div> --> i è l'indice della bibliografia
+
+            Il consiglio in questo caso è di usare pagine già esistenti come template per le nuove e partire a modificare da quelle,
+            dato che la struttura generica è sempre uguale.
+
+
+            
