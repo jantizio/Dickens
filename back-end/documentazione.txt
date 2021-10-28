@@ -1,0 +1,42 @@
+Back-end
+
+INTRODUZIONE
+Il back-end del progetto è un API restfull che restituisce le informazioni del quale il sito necessita.
+Le informazioni che vengono restituite sono di diversa natura: file di testo che contengono i paragrafi del sito, immagini normali e a 360° e le relative didascalie.
+Il servizio utilizza express.js ed è configurato nel file Dickens/back-end/index.js.
+Esso fa a sua volta riferimento ai file contenuti nella cartella Dickens/back-end/routes che sono associano a ogni path un determinato servizio
+(Esempio: al utl http://localhost:5000/bologna/txt viene restituito il numero di testi che quella determinata sezione contiene;
+al utl http://localhost:5000/bologna/img/2 viene restituito la seconda immagine che quella determinata sezione contiene; etc...).
+I servizi specifici sono configurati nei file della cartella Dickens/back-end/controllers che leggono i file presenti nel file-system e li restituiscono ad ogni specifica richiesta.
+
+STRUTTURA
+Il file-system del back-end è strutturato come segue:
+
+    back-end
+    |_node_modules
+    |_routes
+    |_controllers
+    |_texts
+    |_img
+    |_didascalie
+    |_360
+    \_didascalie360
+
+All'interno della cartella back-end oltre al file index.js(vedi INTRODUZIONE) ci sono file di configurazione.
+All'interno di node_modules ci sono file di configurazione.
+All'interno di texts ci sono le cartelle col nome di ogni sezione che contiene almeno un testo, all'interno della quale a sua vuolta ci sono due cartelle chiamate ita ed eng che contengono le traduzioni dei paragrafi nelle due lingue.
+Lo stesso vale per didascalie.
+Lo stesso vale per didascalie360.
+All'interno di img ci sono le cartelle col nome di ogni sezione che contiene almeno un'immagine con all'interno le relative immagini.
+Lo stesso vale per 360.
+All'interno di ogni cartella che racchiude contenuti che devono essere restituiti(img, 360 e i vari ita ed eng) ci sono dei file, con le relative estensioni, e nominati con numeri da 1 al numero di contenuti senza interruzioni.
+IMPORTANTE: ci DEVE essere la corrispondenza tra il nome(quindi il numero) delle didascalie e quello delle immagini a cui fanno riferimento; quindi ci dovranno essere lo stesso numero di immagini e di didascalie.
+Lo stesso vale per didascalie360 e 360.
+
+MANIPOLAZIONE
+Istruzioni per creare una nuova route:
+1-creare le relative cartelle utili: didascalie, img, testi...
+2-riempire le cartelle coi contenuti(si può fare in seguito se non sono tutti immediatamente disponibili: il codice si adatta leggendo autonomamente il numero di file nelle cartelle).
+3-creare lo script relativo alla route all'interno di controllers, copiare e incollare in questo file il contenuto di un qualsiasi altro file di quella cartella e sostituire all'interno del codice i riferimenti con quelli della rout desiderata(in particolare i path).
+4-fare lo stesso con il file all'interno della cartella routes.
+5-all'interno del file Dickens/back-end/index.js importare la route dal file creato nel punto precedente e creare la relativa route con il modulo importato(replicare quello che è già stato già fatto per le altre già presenti).
