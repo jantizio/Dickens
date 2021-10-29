@@ -21,17 +21,18 @@ La cartella src invece ha:
         le cartelle css e js raggruppano normali file css e javascript
 
         le cartelle footer e header contengono rispettivamente il componente per il footer e per l'header,
-        anche questi sono già conclusi e non dovrebbero necessitare modifiche.
+        anche questi sono già completi e non dovrebbero necessitare modifiche.
 
-        la cartella layouts è quella con cui interagirete di più e quella in cui dovrete fare le modifiche per il front-end
+        la cartella layouts è quella di maggiore interesse e quella in cui dovrete fare le modifiche per il front-end
         all'interno della cartella ci sono 2 file chiave:
-            path.jsx --> questo file contiene tutti percorsi delle pagine, e per aggiungere una pagina nuova va inserito il suo path
-            content.jsx --> qui è presente uno switch che rimanda alla pagina giusta, se volete aggiungere una pagina nuova va inserito un nuovo case:
-                    case "name":
-                        return Name(this.props.txt, this.props.img, this.props.tre);
+            path.jsx --> questo file contiene tutti percorsi delle pagine, e per aggiungere una pagina nuova va inserito qui il suo path
+            content.jsx --> qui è presente uno switch che rimanda alla pagina giusta, se volete aggiungere 
+                            una pagina nuova va inserito un nuovo case:
+                                case "name":
+                                    return Name(this.props.txt, this.props.img, this.props.tre);
                             in questo file sarà poi necessario importare il nome della pagina (con iniziale maiuscola) che volete aggiungere.
-            tutti gli altri file sono le descrizioni di come deve essere il layout di ogni pagina, esse sono
-            in sostanza degli array. Le combinazioni che sono state previste da noi sono:
+            tutti gli altri file sono le descrizioni di come deve essere il layout di ogni pagina, 
+            esse sono in sostanza degli array. Le combinazioni che sono state previste da noi sono:
             
             TITOLO DELLA PAGINA
                 <h2 className="subtitle">{txt[i]} </h2> --> dove i sta per l'indice in cui è contenuto il titolo
@@ -56,7 +57,22 @@ La cartella src invece ha:
                 <div className="bibliografia">{txt[i]}</div> --> i è l'indice della bibliografia
 
             Il consiglio in questo caso è di usare pagine già esistenti come template per le nuove e partire a modificare da quelle,
-            dato che la struttura generica è sempre uguale.
+            dato che la struttura generica è sempre uguale. Inoltre qui non sono presenti dettagli specifici di come sono state fatte alcune cose,
+            sta a voi esaminare le cose già fatte.
+
+            tutto ciò che prendete dagli array txt, img, tre è già composto all'interno di tag e compreso di sottotitoli. Per questo motivo
+            se vi servono semplicemente delle immagini potete fare in questo modo:
+                <img src={PROXY + "/bologna/img/1"} /> --> dove bologna è la cartella del backend in cui è contenuta l'immagine e 1 l'indice
+                PROXY va importato in alto in questo modo: import PROXY from "../../proxy.js";
+
+            Una cosa importante sono i link, quelli interni alla pagina vanno fatti in questo modo:
+                <Link to="/page"> --> dove page è il nome della pagina
+            se non fatti in questo modo i link saranno estremamente lenti, i link esterni con dei normali href dell'html.
+
+            Dato che si tratta di codice jsx e non html (anche se ci assomiglia) le parole chiave usano lo standard camel case,
+            ovvero ogni parola inizia con la maiuscola tranne la prima.
+                Esempio: per definire la classe di un tag in html si usa class="name", invece qui va scritto in questo modo --> className="name"
+                         oppure onmouseenter in html --> onMouseEnter in jsx
 
 
             
