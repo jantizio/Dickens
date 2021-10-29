@@ -1,0 +1,16 @@
+sul server il servizio è gestito da pm2,
+nello specifico il back-end sulla porta 5000
+il front-end sulla porta standard http 80 usando il comando [pm2 serve build 80 --spa]
+
+
+è tutto configurato, dopo ogni aggiornamento basta fare:
+
+il back-end non ha bisogno di niente, ma il front-end deve essere buildato in questo modo
+ 	[cd /home/dickens/Scrivania/Dickens/front-end/] per andare nella cartella del front end
+	[npm run build] per creare la build che verrà poi eseguita
+
+Il gestore dei processi va aggiornato in questo modo
+	[pm2 restart all] riavvia tutti i processi
+se ciò non basta si può tentare ciò
+	[pm2 delete all] cancella tutti i processi
+	[pm2 resurrect] fa ripartire i processi salvati precendentemente (sono stati già salvati)
